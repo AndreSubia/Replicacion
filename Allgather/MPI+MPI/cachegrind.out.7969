@@ -1,0 +1,4244 @@
+desc: I1 cache:         32768 B, 64 B, 8-way associative
+desc: D1 cache:         32768 B, 64 B, 8-way associative
+desc: LL cache:         3145728 B, 64 B, 12-way associative
+cmd: ./all
+events: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw 
+fl=/build/gcc/src/gcc-build/gcc/include/cpuid.h
+fn=__cpu_indicator_init@GCC_4.8.0
+269 4 0 0 0 0 0 0 0 0
+290 4 1 1 0 0 0 0 0 0
+293 8 0 0 0 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/basic_ios.h
+fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
+322 6 0 0 6 4 4 0 0 0
+fn=std::ios_base::Init::Init()
+310 4 0 0 0 0 0 4 0 0
+462 80 11 11 16 5 0 60 4 3
+fn=std::ostream::flush()
+322 6 0 0 6 4 4 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/basic_ios.tcc
+fn=std::basic_ios<char, std::char_traits<char> >::_M_cache_locale(std::locale const&)
+157 24 1 1 0 0 0 8 0 0
+159 16 0 0 4 0 0 4 0 0
+160 12 0 0 4 0 0 8 0 0
+164 16 1 1 4 0 0 4 0 0
+165 12 0 0 4 0 0 8 0 0
+169 16 0 0 4 1 0 4 0 0
+170 12 0 0 4 0 0 8 0 0
+173 16 0 0 12 0 0 0 0 0
+fn=std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+126 24 1 1 0 0 0 8 0 0
+129 4 0 0 4 1 0 4 0 0
+132 12 0 0 4 0 0 4 0 0
+146 8 1 1 0 0 0 4 0 0
+149 4 0 0 0 0 0 4 0 0
+150 4 0 0 0 0 0 4 0 0
+151 4 0 0 0 0 0 4 0 0
+152 16 0 0 0 0 0 4 0 0
+153 16 0 0 12 0 0 0 0 0
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::_M_cache_locale(std::locale const&)
+157 24 1 1 0 0 0 8 0 0
+159 16 0 0 4 1 0 4 0 0
+160 12 0 0 4 0 0 8 0 0
+164 16 0 0 4 1 0 4 0 0
+165 12 1 1 4 0 0 8 0 0
+169 16 0 0 4 1 0 4 0 0
+170 12 0 0 4 1 0 8 0 0
+173 16 0 0 12 0 0 0 0 0
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*)
+126 24 1 1 0 0 0 8 0 0
+129 4 0 0 4 0 0 4 0 0
+132 12 1 1 4 1 0 4 0 0
+146 4 0 0 0 0 0 4 0 0
+147 4 0 0 0 0 0 4 0 0
+149 4 0 0 0 0 0 4 0 0
+150 4 0 0 0 0 0 4 0 0
+151 4 0 0 0 0 0 4 0 0
+152 16 0 0 0 0 0 4 0 0
+153 16 1 1 12 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/codecvt.h
+fn=std::locale::_Impl::_Impl(unsigned long)
+481 3 1 1 1 1 0 1 0 0
+538 3 0 0 1 0 0 1 0 0
+596 3 1 1 1 0 0 1 0 0
+653 3 0 0 1 1 0 1 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/ios_base.h
+fn=std::ios_base::Init::Init()
+100 2 0 0 2 0 0 0 0 0
+fn=std::ios_base::ios_base()
+573 144 1 1 0 0 0 144 20 15
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_classes.h
+fn=_GLOBAL__sub_I_cxx11_locale_inst.cc
+795 4 1 1 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_cxx11_wlocale_inst.cc
+795 4 1 1 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_locale_inst.cc
+795 4 1 1 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_wlocale_inst.cc
+795 4 1 1 2 1 0 1 0 0
+fn=std::__cxx11::messages<char>::messages(unsigned long)
+405 4 0 0 0 0 0 1 1 1
+fn=std::__cxx11::messages<wchar_t>::messages(unsigned long)
+405 4 1 1 0 0 0 1 0 0
+fn=std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned long)
+405 4 1 1 0 0 0 1 0 0
+fn=std::__timepunct<wchar_t>::__timepunct(std::__timepunct_cache<wchar_t>*, unsigned long)
+405 4 1 1 0 0 0 1 0 0
+fn=std::codecvt<char, char, __mbstate_t>::codecvt(unsigned long)
+405 4 1 1 0 0 0 1 1 1
+fn=std::codecvt<wchar_t, char, __mbstate_t>::codecvt(unsigned long)
+405 4 0 0 0 0 0 1 1 1
+fn=std::ctype<char>::ctype(unsigned short const*, bool, unsigned long)
+405 4 0 0 0 0 0 1 1 1
+fn=std::ctype<wchar_t>::ctype(unsigned long)
+405 4 0 0 0 0 0 1 1 1
+fn=std::locale::_Impl::_Impl(unsigned long)
+405 37 4 4 0 0 0 32 13 13
+613 128 9 9 64 20 0 32 0 0
+672 10 1 1 4 1 0 6 0 0
+fn=std::locale::_Impl::_M_init_extra(std::locale::facet**)
+405 14 1 1 0 0 0 14 5 5
+620 110 12 12 63 6 0 47 0 0
+672 10 0 0 4 1 0 6 0 0
+fn=std::messages<char>::messages(unsigned long)
+405 4 0 0 0 0 0 1 1 1
+fn=std::messages<wchar_t>::messages(unsigned long)
+405 4 0 0 0 0 0 1 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_classes.tcc
+fn=bool std::has_facet<std::ctype<char> >(std::locale const&)
+104 12 1 1 0 0 0 4 0 0
+106 8 0 0 8 0 0 4 0 0
+107 4 0 0 4 0 0 0 0 0
+110 52 1 1 24 1 0 4 0 0
+114 12 0 0 8 0 0 0 0 0
+fn=bool std::has_facet<std::ctype<wchar_t> >(std::locale const&)
+104 12 1 1 0 0 0 4 0 0
+106 8 0 0 8 0 0 4 0 0
+107 4 0 0 4 0 0 0 0 0
+110 52 1 1 24 0 0 4 0 0
+114 12 0 0 8 0 0 0 0 0
+fn=bool std::has_facet<std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+104 12 0 0 0 0 0 4 0 0
+106 8 0 0 8 0 0 4 0 0
+107 4 0 0 4 0 0 0 0 0
+110 52 1 1 24 0 0 4 0 0
+114 12 0 0 8 0 0 0 0 0
+fn=bool std::has_facet<std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+104 12 0 0 0 0 0 4 0 0
+106 8 0 0 8 0 0 4 0 0
+107 4 0 0 4 0 0 0 0 0
+110 52 1 1 24 0 0 4 0 0
+114 12 0 0 8 0 0 0 0 0
+fn=bool std::has_facet<std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+104 12 1 1 0 0 0 4 0 0
+106 8 0 0 8 0 0 4 0 0
+107 4 0 0 4 0 0 0 0 0
+110 52 1 1 24 1 0 4 0 0
+114 12 0 0 8 0 0 0 0 0
+fn=bool std::has_facet<std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+104 12 1 1 0 0 0 4 0 0
+106 8 0 0 8 0 0 4 0 0
+107 4 0 0 4 0 0 0 0 0
+110 52 1 1 24 0 0 4 0 0
+114 12 0 0 8 0 0 0 0 0
+fn=std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&)
+132 12 1 1 0 0 0 4 0 0
+134 8 0 0 8 0 0 4 0 0
+135 8 0 0 8 0 0 0 0 0
+136 20 1 1 8 0 0 0 0 0
+139 24 0 0 12 0 0 4 0 0
+143 8 0 0 8 0 0 0 0 0
+fn=std::ctype<wchar_t> const& std::use_facet<std::ctype<wchar_t> >(std::locale const&)
+132 12 1 1 0 0 0 4 0 0
+134 8 0 0 8 0 0 4 0 0
+135 8 0 0 8 0 0 0 0 0
+136 20 0 0 8 0 0 0 0 0
+139 24 1 1 12 0 0 4 0 0
+143 8 0 0 8 0 0 0 0 0
+fn=std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > const& std::use_facet<std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+132 12 1 1 0 0 0 4 0 0
+134 8 0 0 8 0 0 4 0 0
+135 8 0 0 8 0 0 0 0 0
+136 20 0 0 8 0 0 0 0 0
+139 24 1 1 12 0 0 4 0 0
+143 8 0 0 8 0 0 0 0 0
+fn=std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > const& std::use_facet<std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+132 12 0 0 0 0 0 4 0 0
+134 8 1 1 8 0 0 4 0 0
+135 8 0 0 8 0 0 0 0 0
+136 20 0 0 8 0 0 0 0 0
+139 24 0 0 12 0 0 4 0 0
+143 8 0 0 8 0 0 0 0 0
+fn=std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > const& std::use_facet<std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+132 12 1 1 0 0 0 4 0 0
+134 8 0 0 8 0 0 4 0 0
+135 8 0 0 8 0 0 0 0 0
+136 20 1 1 8 0 0 0 0 0
+139 24 0 0 12 0 0 4 0 0
+143 8 0 0 8 0 0 0 0 0
+fn=std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > const& std::use_facet<std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+132 12 1 1 0 0 0 4 0 0
+134 8 0 0 8 0 0 4 0 0
+135 8 0 0 8 0 0 0 0 0
+136 20 0 0 8 0 0 0 0 0
+139 24 1 1 12 0 0 4 0 0
+143 8 0 0 8 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_facets.h
+fn=_GLOBAL__sub_I_cxx11_locale_inst.cc
+1883 4 0 0 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_cxx11_wlocale_inst.cc
+1883 4 0 0 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_locale_inst.cc
+1883 4 0 0 2 2 1 1 0 0
+2277 4 0 0 2 1 0 1 0 0
+2557 4 0 0 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_wlocale_inst.cc
+1883 4 0 0 2 2 1 1 0 0
+2277 4 0 0 2 1 0 1 0 0
+2557 4 0 0 2 1 0 1 0 0
+fn=std::locale::_Impl::_Impl(unsigned long)
+1626 25 3 3 0 0 0 20 4 4
+1709 8 1 1 2 1 0 4 1 1
+1710 6 0 0 2 1 0 2 0 0
+1973 6 1 1 2 2 0 2 0 0
+2314 6 0 0 2 1 0 2 0 0
+fn=std::locale::_Impl::_M_init_extra(std::locale::facet**)
+1709 8 2 2 2 1 0 4 1 1
+1710 6 0 0 2 1 0 2 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/locale_facets_nonio.h
+fn=_GLOBAL__sub_I_cxx11_locale_inst.cc
+756 4 0 0 2 1 0 1 0 0
+1375 8 0 0 4 3 1 2 0 0
+1605 4 1 1 2 1 0 1 0 0
+1762 4 0 0 2 1 0 1 0 0
+1968 4 0 0 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_cxx11_wlocale_inst.cc
+756 4 0 0 2 1 0 1 0 0
+1375 8 0 0 4 3 1 2 0 0
+1605 4 1 1 2 1 0 1 0 0
+1762 4 0 0 2 1 0 1 0 0
+1968 4 0 0 2 0 0 1 0 0
+fn=_GLOBAL__sub_I_locale_inst.cc
+320 4 1 1 2 1 0 1 0 0
+756 4 0 0 2 1 0 1 0 0
+889 4 0 0 2 1 0 1 0 0
+1375 8 0 0 4 3 1 2 0 0
+1605 4 1 1 2 1 0 1 0 0
+1762 4 0 0 2 1 0 1 0 0
+1968 4 0 0 2 1 0 1 0 0
+fn=_GLOBAL__sub_I_wlocale_inst.cc
+320 4 1 1 2 1 0 1 0 0
+756 4 0 0 2 1 0 1 0 0
+889 4 0 0 2 1 0 1 0 0
+1375 8 0 0 4 3 1 2 0 0
+1605 4 1 1 2 1 0 1 0 0
+1762 4 0 0 2 1 0 1 0 0
+1968 4 0 0 2 1 0 1 0 0
+fn=std::locale::_Impl::_Impl(unsigned long)
+136 102 17 17 0 0 0 98 10 10
+390 6 1 1 2 1 0 2 0 0
+819 6 1 1 2 2 0 2 0 0
+986 66 8 8 0 0 0 56 6 6
+1067 17 2 2 4 4 0 8 0 0
+1068 16 4 4 4 3 0 4 0 0
+1490 6 1 1 2 1 0 2 0 0
+1642 6 1 1 2 2 0 2 0 0
+fn=std::locale::_Impl::_M_init_extra(std::locale::facet**)
+390 6 2 2 2 1 0 2 0 0
+1067 17 3 3 5 2 0 8 0 0
+1068 16 0 0 4 0 0 4 0 0
+1490 6 0 0 2 0 0 2 0 0
+1642 6 0 0 2 0 0 2 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/bits/ostream.tcc
+fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
+210 9 1 1 0 0 0 3 0 0
+219 15 0 0 3 3 3 0 0 0
+232 9 0 0 6 0 0 0 0 0
+fn=std::ostream::flush()
+210 9 1 1 0 0 0 3 0 0
+219 15 0 0 3 3 3 0 0 0
+232 9 0 0 6 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ext/atomicity.h
+fn=std::ios_base::Init::Init()
+50 21 1 1 14 1 0 0 0 0
+55 1 0 0 2 0 0 0 0 0
+83 14 0 0 7 1 0 0 0 0
+94 2 1 1 1 0 0 0 0 0
+97 1 0 0 0 0 0 0 0 0
+fn=std::ios_base::Init::~Init()
+50 21 1 1 14 1 1 0 0 0
+83 14 0 0 7 1 1 0 0 0
+fn=std::locale::_Impl::_M_init_extra(std::locale::facet**)
+55 16 5 5 32 0 0 0 0 0
+94 33 1 1 1 0 0 0 0 0
+97 16 0 0 0 0 0 0 0 0
+fn=std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*)
+55 32 1 1 64 0 0 0 0 0
+94 96 1 1 32 0 0 0 0 0
+97 32 0 0 0 0 0 0 0 0
+fn=std::locale::id::_M_id() const
+50 144 0 0 96 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ext/bitmap_allocator.h
+fn=_GLOBAL__sub_I_bitmap_allocator.cc
+104 8 1 1 0 0 0 6 2 0
+411 6 0 0 0 0 0 2 0 0
+419 2 0 0 0 0 0 2 0 0
+420 2 0 0 0 0 0 2 0 0
+421 2 0 0 0 0 0 0 0 0
+1112 8 1 1 2 1 0 2 0 0
+1125 8 2 2 2 0 0 2 0 0
+1130 8 0 0 2 0 0 2 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ext/concurrence.h
+fn=_GLOBAL__sub_I_bitmap_allocator.cc
+129 28 0 0 0 0 0 20 2 0
+fn=_GLOBAL__sub_I_eh_alloc.cc
+129 4 0 0 0 0 0 3 1 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ext/stdio_sync_filebuf.h
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::sync()
+190 3 1 1 0 0 0 0 0 0
+191 6 0 0 6 3 3 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<wchar_t, std::char_traits<wchar_t> >::sync()
+190 3 0 0 0 0 0 0 0 0
+191 6 0 0 6 2 2 0 0 0
+fn=std::ios_base::Init::Init()
+80 22 4 4 2 1 0 18 1 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/istream
+fn=std::ios_base::Init::Init()
+94 12 2 2 2 1 0 6 0 0
+95 6 1 1 2 0 0 2 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/ostream
+fn=std::ios_base::Init::Init()
+85 44 2 2 8 2 0 18 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/parallel/settings.h
+fn=_GLOBAL__sub_I_parallel_settings.cc
+286 16 2 2 0 0 0 11 5 5
+337 34 6 6 1 1 1 33 1 1
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/streambuf
+fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
+278 6 0 0 6 3 3 3 0 0
+fn=std::ios_base::Init::Init()
+473 58 8 8 8 2 0 48 9 0
+fn=std::ostream::flush()
+278 6 1 1 6 3 3 3 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-gnu/bits/gthr-default.h
+fn=std::locale::_S_initialize()
+700 66 1 1 22 0 0 22 0 0
+fn=std::locale::facet::_S_get_c_locale()
+700 42 0 0 14 0 0 14 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-gnu/bits/messages_members.h
+fn=std::__cxx11::messages<char>::messages(unsigned long)
+44 5 1 1 0 0 0 2 0 0
+45 1 0 0 1 0 0 1 0 0
+46 6 0 0 2 1 0 4 0 0
+47 4 1 1 3 0 0 0 0 0
+fn=std::__cxx11::messages<wchar_t>::messages(unsigned long)
+44 5 1 1 0 0 0 2 0 0
+45 1 0 0 1 0 0 1 0 0
+46 6 0 0 2 0 0 4 0 0
+47 4 0 0 3 0 0 0 0 0
+fn=std::messages<char>::messages(unsigned long)
+44 5 1 1 0 0 0 2 0 0
+45 1 0 0 1 0 0 1 0 0
+46 6 1 1 2 0 0 4 0 0
+47 4 0 0 3 0 0 0 0 0
+fn=std::messages<wchar_t>::messages(unsigned long)
+44 5 1 1 0 0 0 2 0 0
+45 1 0 0 1 0 0 1 0 0
+46 6 0 0 2 0 0 4 0 0
+47 4 1 1 3 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-gnu/bits/time_members.h
+fn=std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned long)
+48 5 1 1 0 0 0 2 0 0
+50 7 0 0 2 0 0 5 1 1
+51 7 0 0 4 1 0 1 0 0
+fn=std::__timepunct<wchar_t>::__timepunct(std::__timepunct_cache<wchar_t>*, unsigned long)
+48 5 1 1 0 0 0 2 0 0
+50 7 0 0 2 1 0 5 0 0
+51 7 0 0 4 0 0 1 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++11/ctype_configure_char.cc
+fn=std::ctype<char>::ctype(unsigned short const*, bool, unsigned long)
+121 7 1 1 0 0 0 3 1 0
+122 1 0 0 1 1 0 1 0 0
+123 4 1 1 0 0 0 1 0 0
+124 1 0 0 1 1 0 0 0 0
+125 1 0 0 1 0 0 0 0 0
+126 4 1 1 1 0 0 0 0 0
+127 9 0 0 1 1 0 7 1 1
+129 42 1 1 0 0 0 33 4 4
+130 39 0 0 0 0 0 33 3 3
+131 4 0 0 4 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++11/ctype_members.cc
+fn=std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const
+60 12 1 1 0 0 0 0 0 0
+62 100 3 3 0 0 0 0 0 0
+65 3 0 0 2 0 0 0 0 0
+68 3 0 0 2 0 0 0 0 0
+71 3 0 0 2 0 0 0 0 0
+74 3 2 2 2 1 0 0 0 0
+77 3 1 1 2 0 0 0 0 0
+80 3 0 0 2 0 0 0 0 0
+83 3 0 0 2 0 0 0 0 0
+86 3 0 0 2 0 0 0 0 0
+89 3 0 0 2 0 0 0 0 0
+98 3 0 0 2 0 0 0 0 0
+104 4 0 0 2 0 0 0 0 0
+fn=std::ctype<wchar_t>::_M_initialize_ctype()
+273 7 2 2 0 0 0 4 0 0
+275 5 0 0 2 0 0 1 0 0
+278 385 0 0 0 0 0 0 0 0
+281 256 0 0 0 0 0 0 0 0
+284 128 0 0 0 0 0 128 2 2
+287 2 1 1 0 0 0 1 0 0
+290 256 0 0 0 0 0 0 0 0
+291 512 0 0 0 0 0 0 0 0
+292 256 0 0 0 0 0 256 16 16
+294 32 0 0 0 0 0 0 0 0
+296 74 1 1 0 0 0 12 0 0
+297 44 0 0 12 0 0 24 2 2
+300 2 0 0 1 0 0 0 0 0
+302 5 0 0 4 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98/c++locale.cc
+fn=std::locale::facet::_S_create_c_locale(__locale_struct*&, char const*, __locale_struct*)
+134 3 1 1 0 0 0 1 0 0
+135 3 0 0 1 1 0 2 1 1
+136 2 0 0 0 0 0 0 0 0
+142 2 0 0 2 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98/monetary_members.cc
+fn=std::__cxx11::moneypunct<char, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+372 10 1 1 0 0 0 6 0 0
+373 2 0 0 1 0 0 0 0 0
+376 2 0 0 0 0 0 0 0 0
+379 2 1 1 1 0 0 1 0 0
+380 2 0 0 1 0 0 1 0 0
+381 3 0 0 1 0 0 1 0 0
+382 1 0 0 0 0 0 1 0 0
+383 1 0 0 0 0 0 1 0 0
+384 1 1 1 0 0 0 1 0 0
+385 1 0 0 0 0 0 1 0 0
+386 1 0 0 0 0 0 1 0 0
+387 1 0 0 0 0 0 1 0 0
+388 1 0 0 0 0 0 1 0 0
+389 1 0 0 0 0 0 1 0 0
+390 1 0 0 0 0 0 1 0 0
+391 3 1 1 2 2 1 1 0 0
+392 2 0 0 1 0 0 1 0 0
+394 35 0 0 0 0 0 0 0 0
+395 35 0 0 24 1 0 11 0 0
+517 8 0 0 7 0 0 0 0 0
+fn=std::__cxx11::moneypunct<char, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+216 10 2 2 0 0 0 6 0 0
+217 2 0 0 1 0 0 0 0 0
+220 2 0 0 0 0 0 0 0 0
+223 2 1 1 1 0 0 1 0 0
+224 2 1 1 1 0 0 1 0 0
+225 3 0 0 1 0 0 1 0 0
+226 1 0 0 0 0 0 1 0 0
+227 1 0 0 0 0 0 1 0 0
+228 1 0 0 0 0 0 1 0 0
+229 1 0 0 0 0 0 1 0 0
+230 1 0 0 0 0 0 1 0 0
+231 1 0 0 0 0 0 1 0 0
+232 1 0 0 0 0 0 1 0 0
+233 1 1 1 0 0 0 1 0 0
+234 1 0 0 0 0 0 1 0 0
+235 3 0 0 2 0 0 1 0 0
+236 2 0 0 1 0 0 1 0 0
+238 35 0 0 0 0 0 0 0 0
+239 35 0 0 24 0 0 11 0 0
+366 8 1 1 7 0 0 0 0 0
+fn=std::__cxx11::moneypunct<wchar_t, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+741 13 2 2 1 0 0 7 0 0
+742 2 0 0 1 0 0 0 0 0
+745 2 0 0 0 0 0 0 0 0
+748 3 1 1 1 0 0 1 0 0
+750 2 1 1 0 0 0 1 0 0
+751 1 0 0 0 0 0 1 0 0
+752 1 0 0 0 0 0 1 0 0
+753 2 0 0 0 0 0 1 0 0
+754 1 0 0 0 0 0 1 0 0
+755 1 0 0 0 0 0 1 0 0
+756 1 0 0 0 0 0 1 0 0
+757 1 0 0 0 0 0 1 0 0
+758 1 0 0 0 0 0 1 0 0
+759 1 0 0 0 0 0 1 0 0
+760 3 0 0 2 0 0 1 0 0
+761 2 0 0 1 0 0 1 0 0
+764 36 0 0 0 0 0 0 0 0
+765 1 0 0 1 0 0 0 0 0
+766 24 1 1 13 0 0 11 0 0
+914 11 1 1 9 0 0 0 0 0
+fn=std::__cxx11::moneypunct<wchar_t, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+558 13 2 2 1 0 0 7 0 0
+559 2 0 0 1 0 0 0 0 0
+562 2 0 0 0 0 0 0 0 0
+565 3 1 1 1 0 0 1 0 0
+567 2 0 0 0 0 0 1 0 0
+568 1 1 1 0 0 0 1 0 0
+569 1 0 0 0 0 0 1 0 0
+570 2 0 0 0 0 0 1 0 0
+571 1 0 0 0 0 0 1 0 0
+572 1 0 0 0 0 0 1 0 0
+573 1 0 0 0 0 0 1 0 0
+574 1 0 0 0 0 0 1 0 0
+575 1 0 0 0 0 0 1 0 0
+576 1 0 0 0 0 0 1 0 0
+577 3 0 0 2 0 0 1 0 0
+578 2 0 0 1 0 0 1 0 0
+581 36 0 0 0 0 0 0 0 0
+582 1 0 0 1 0 0 0 0 0
+583 24 1 1 13 0 0 11 0 0
+731 11 1 1 9 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98/monetary_members_cow.cc
+fn=std::moneypunct<char, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+372 10 2 2 0 0 0 6 0 0
+373 2 0 0 1 0 0 0 0 0
+376 2 0 0 0 0 0 0 0 0
+379 2 1 1 1 0 0 1 0 0
+380 2 0 0 1 0 0 1 0 0
+381 3 0 0 1 0 0 1 0 0
+382 1 0 0 0 0 0 1 0 0
+383 1 0 0 0 0 0 1 0 0
+384 1 0 0 0 0 0 1 0 0
+385 1 1 1 0 0 0 1 0 0
+386 1 0 0 0 0 0 1 0 0
+387 1 0 0 0 0 0 1 0 0
+388 1 0 0 0 0 0 1 0 0
+389 1 0 0 0 0 0 1 0 0
+390 1 0 0 0 0 0 1 0 0
+391 3 0 0 2 0 0 1 0 0
+392 2 0 0 1 0 0 1 0 0
+394 35 0 0 0 0 0 0 0 0
+395 35 1 1 24 0 0 11 0 0
+517 8 0 0 7 0 0 0 0 0
+fn=std::moneypunct<char, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+216 10 1 1 0 0 0 6 0 0
+217 2 0 0 1 0 0 0 0 0
+220 2 0 0 0 0 0 0 0 0
+223 2 1 1 1 0 0 1 0 0
+224 2 0 0 1 0 0 1 0 0
+225 3 0 0 1 0 0 1 0 0
+226 1 0 0 0 0 0 1 0 0
+227 1 0 0 0 0 0 1 0 0
+228 1 0 0 0 0 0 1 0 0
+229 1 0 0 0 0 0 1 0 0
+230 1 0 0 0 0 0 1 0 0
+231 1 0 0 0 0 0 1 0 0
+232 1 0 0 0 0 0 1 0 0
+233 1 0 0 0 0 0 1 0 0
+234 1 0 0 0 0 0 1 0 0
+235 3 1 1 2 0 0 1 0 0
+236 2 0 0 1 0 0 1 0 0
+238 35 0 0 0 0 0 0 0 0
+239 35 1 1 24 0 0 11 0 0
+366 8 0 0 7 0 0 0 0 0
+fn=std::moneypunct<wchar_t, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+741 13 1 1 1 0 0 7 0 0
+742 2 1 1 1 0 0 0 0 0
+745 2 0 0 0 0 0 0 0 0
+748 3 2 2 1 0 0 1 0 0
+750 2 0 0 0 0 0 1 0 0
+751 1 0 0 0 0 0 1 0 0
+752 1 0 0 0 0 0 1 0 0
+753 2 0 0 0 0 0 1 0 0
+754 1 0 0 0 0 0 1 0 0
+755 1 0 0 0 0 0 1 0 0
+756 1 1 1 0 0 0 1 0 0
+757 1 0 0 0 0 0 1 0 0
+758 1 0 0 0 0 0 1 0 0
+759 1 0 0 0 0 0 1 0 0
+760 3 0 0 2 0 0 1 0 0
+761 2 0 0 1 0 0 1 0 0
+764 36 1 1 0 0 0 0 0 0
+765 1 0 0 1 0 0 0 0 0
+766 24 0 0 13 0 0 11 0 0
+914 11 0 0 9 0 0 0 0 0
+fn=std::moneypunct<wchar_t, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+558 13 1 1 1 0 0 7 0 0
+559 2 0 0 1 0 0 0 0 0
+562 2 0 0 0 0 0 0 0 0
+565 3 1 1 1 0 0 1 0 0
+567 2 0 0 0 0 0 1 0 0
+568 1 0 0 0 0 0 1 0 0
+569 1 0 0 0 0 0 1 0 0
+570 2 0 0 0 0 0 1 0 0
+571 1 0 0 0 0 0 1 0 0
+572 1 0 0 0 0 0 1 0 0
+573 1 0 0 0 0 0 1 0 0
+574 1 1 1 0 0 0 1 0 0
+575 1 0 0 0 0 0 1 0 0
+576 1 1 1 0 0 0 1 0 0
+577 3 0 0 2 0 0 1 0 0
+578 2 0 0 1 0 0 1 0 0
+581 36 0 0 0 0 0 0 0 0
+582 1 0 0 1 0 0 0 0 0
+583 24 0 0 13 0 0 11 0 0
+731 11 1 1 9 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98/numeric_members.cc
+fn=std::__cxx11::numpunct<char>::_M_initialize_numpunct(__locale_struct*)
+92 8 1 1 0 0 0 4 0 0
+93 2 0 0 1 0 0 0 0 0
+96 2 0 0 0 0 0 0 0 0
+99 3 1 1 1 0 0 1 0 0
+100 1 0 0 0 0 0 1 0 0
+101 1 0 0 0 0 0 1 0 0
+103 1 0 0 0 0 0 1 0 0
+104 2 1 1 1 0 0 1 0 0
+106 110 0 0 0 0 0 0 0 0
+107 110 0 0 74 3 1 36 0 0
+109 81 0 0 0 0 0 0 0 0
+110 80 1 1 54 1 0 26 0 0
+164 3 1 1 1 0 0 1 0 0
+165 1 0 0 0 0 0 1 0 0
+167 2 0 0 0 0 0 1 0 0
+168 1 0 0 0 0 0 1 0 0
+169 6 0 0 5 0 0 0 0 0
+fn=std::__cxx11::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*)
+183 8 2 2 0 0 0 4 0 0
+184 2 0 0 1 0 0 0 0 0
+187 2 0 0 0 0 0 0 0 0
+190 3 1 1 1 0 0 1 0 0
+191 1 0 0 0 0 0 1 0 0
+192 1 0 0 0 0 0 1 0 0
+194 2 0 0 0 0 0 1 0 0
+198 110 0 0 0 0 0 0 0 0
+200 74 1 1 38 0 0 36 2 2
+202 81 0 0 0 0 0 0 0 0
+204 54 1 1 28 0 0 26 1 1
+256 2 1 1 0 0 0 1 0 0
+257 1 0 0 0 0 0 1 0 0
+259 2 0 0 0 0 0 1 0 0
+260 1 0 0 0 0 0 1 0 0
+261 6 0 0 5 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98/numeric_members_cow.cc
+fn=std::numpunct<char>::_M_initialize_numpunct(__locale_struct*)
+92 8 1 1 0 0 0 4 0 0
+93 2 0 0 1 0 0 0 0 0
+96 2 0 0 0 0 0 0 0 0
+99 3 1 1 1 0 0 1 0 0
+100 1 0 0 0 0 0 1 0 0
+101 1 0 0 0 0 0 1 0 0
+103 1 0 0 0 0 0 1 0 0
+104 2 1 1 1 0 0 1 0 0
+106 110 0 0 0 0 0 0 0 0
+107 110 0 0 74 0 0 36 0 0
+109 81 0 0 0 0 0 0 0 0
+110 80 1 1 54 0 0 26 0 0
+164 3 1 1 1 0 0 1 0 0
+165 1 0 0 0 0 0 1 0 0
+167 2 0 0 0 0 0 1 0 0
+168 1 0 0 0 0 0 1 0 0
+169 6 0 0 5 0 0 0 0 0
+fn=std::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*)
+183 8 1 1 0 0 0 4 0 0
+184 2 0 0 1 0 0 0 0 0
+187 2 1 1 0 0 0 0 0 0
+190 3 1 1 1 0 0 1 0 0
+191 1 0 0 0 0 0 1 0 0
+192 1 0 0 0 0 0 1 0 0
+194 2 0 0 0 0 0 1 0 0
+198 110 0 0 0 0 0 0 0 0
+200 74 1 1 38 0 0 36 0 0
+202 81 1 1 0 0 0 0 0 0
+204 54 0 0 28 0 0 26 0 0
+256 2 1 1 0 0 0 1 0 0
+257 1 0 0 0 0 0 1 0 0
+259 2 0 0 0 0 0 1 0 0
+260 1 0 0 0 0 0 1 0 0
+261 6 0 0 5 0 0 0 0 0
+fl=/build/gcc/src/gcc-build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98/time_members.cc
+fn=std::__timepunct<char>::_M_initialize_timepunct(__locale_struct*)
+66 6 1 1 0 0 0 3 0 0
+67 2 0 0 1 0 0 0 0 0
+70 2 1 1 1 0 0 0 0 0
+73 2 1 1 1 0 0 2 0 0
+75 3 1 1 1 0 0 1 0 0
+76 1 0 0 0 0 0 1 0 0
+77 2 0 0 0 0 0 1 0 0
+78 1 0 0 0 0 0 1 0 0
+79 2 1 1 0 0 0 1 0 0
+80 1 0 0 0 0 0 1 0 0
+81 2 0 0 0 0 0 1 0 0
+82 2 0 0 0 0 0 1 0 0
+83 1 0 0 0 0 0 1 0 0
+86 2 0 0 0 0 0 1 0 0
+87 2 0 0 0 0 0 1 0 0
+88 2 0 0 0 0 0 1 0 0
+89 2 1 1 0 0 0 1 0 0
+90 2 0 0 0 0 0 1 0 0
+91 2 0 0 0 0 0 1 0 0
+92 2 0 0 0 0 0 1 0 0
+95 2 0 0 0 0 0 1 0 0
+96 2 1 1 0 0 0 1 0 0
+97 2 0 0 0 0 0 1 0 0
+98 2 0 0 0 0 0 1 0 0
+99 2 0 0 0 0 0 1 0 0
+100 2 0 0 0 0 0 1 0 0
+101 2 0 0 0 0 0 1 0 0
+104 2 0 0 0 0 0 1 0 0
+105 2 1 1 0 0 0 1 0 0
+106 2 1 1 0 0 0 1 0 0
+107 2 0 0 0 0 0 1 0 0
+108 2 0 0 0 0 0 1 0 0
+109 2 0 0 0 0 0 1 0 0
+110 2 0 0 0 0 0 1 0 0
+111 2 0 0 0 0 0 1 0 0
+112 2 0 0 0 0 0 1 0 0
+113 2 0 0 0 0 0 1 0 0
+114 2 0 0 0 0 0 1 0 0
+115 2 0 0 0 0 0 1 0 0
+118 2 0 0 0 0 0 1 0 0
+119 2 1 1 0 0 0 1 0 0
+120 2 0 0 0 0 0 1 0 0
+121 2 0 0 0 0 0 1 0 0
+122 1 1 1 0 0 0 1 0 0
+123 2 0 0 0 0 0 1 0 0
+124 2 0 0 0 0 0 1 0 0
+125 2 1 1 0 0 0 1 0 0
+126 2 0 0 0 0 0 1 0 0
+127 2 0 0 0 0 0 1 0 0
+128 2 0 0 0 0 0 1 0 0
+129 2 1 1 0 0 0 1 0 0
+192 4 0 0 3 0 0 0 0 0
+fn=std::__timepunct<wchar_t>::_M_initialize_timepunct(__locale_struct*)
+222 5 1 1 0 0 0 2 0 0
+223 2 0 0 1 0 0 0 0 0
+226 2 0 0 1 0 0 0 0 0
+229 2 1 1 1 0 0 2 0 0
+231 3 0 0 1 0 0 1 0 0
+232 1 0 0 0 0 0 1 0 0
+233 2 0 0 0 0 0 1 0 0
+234 1 0 0 0 0 0 1 0 0
+235 2 0 0 0 0 0 1 0 0
+236 1 0 0 0 0 0 1 0 0
+237 2 0 0 0 0 0 1 0 0
+238 2 1 1 0 0 0 1 0 0
+239 1 0 0 0 0 0 1 0 0
+242 2 0 0 0 0 0 1 0 0
+243 2 0 0 0 0 0 1 0 0
+244 2 0 0 0 0 0 1 0 0
+245 2 0 0 0 0 0 1 0 0
+246 2 1 1 0 0 0 1 0 0
+247 2 0 0 0 0 0 1 0 0
+248 2 0 0 0 0 0 1 0 0
+251 2 0 0 0 0 0 1 0 0
+252 2 0 0 0 0 0 1 0 0
+253 2 1 1 0 0 0 1 0 0
+254 2 0 0 0 0 0 1 0 0
+255 2 0 0 0 0 0 1 0 0
+256 2 0 0 0 0 0 1 0 0
+257 2 0 0 0 0 0 1 0 0
+260 2 1 1 0 0 0 1 0 0
+261 2 0 0 0 0 0 1 0 0
+262 2 0 0 0 0 0 1 0 0
+263 2 1 1 0 0 0 1 0 0
+264 2 0 0 0 0 0 1 0 0
+265 2 0 0 0 0 0 1 0 0
+266 2 1 1 0 0 0 1 0 0
+267 2 0 0 0 0 0 1 0 0
+268 2 0 0 0 0 0 1 0 0
+269 2 0 0 0 0 0 1 0 0
+270 2 1 1 0 0 0 1 0 0
+271 2 0 0 0 0 0 1 0 0
+274 2 0 0 0 0 0 1 0 0
+275 2 0 0 0 0 0 1 0 0
+276 2 0 0 0 0 0 1 0 0
+277 2 1 1 0 0 0 1 0 0
+278 1 0 0 0 0 0 1 0 0
+279 2 0 0 0 0 0 1 0 0
+280 2 0 0 0 0 0 1 0 0
+281 2 0 0 0 0 0 1 0 0
+282 2 1 1 0 0 0 1 0 0
+283 2 0 0 0 0 0 1 0 0
+284 2 0 0 0 0 0 1 0 0
+285 2 0 0 0 0 0 1 0 0
+396 3 0 0 2 0 0 0 0 0
+fl=/build/gcc/src/gcc/libgcc/config/i386/cpuinfo.c
+fn=__cpu_indicator_init@GCC_4.8.0
+125 2 0 0 0 0 0 0 0 0
+133 7 1 1 1 1 1 0 0 0
+197 2 1 1 0 0 0 1 0 0
+199 1 0 0 0 0 0 0 0 0
+431 3 1 1 0 0 0 2 0 0
+440 4 0 0 2 2 0 0 0 0
+441 1 0 0 0 0 0 0 0 0
+453 2 0 0 0 0 0 0 0 0
+465 3 0 0 0 0 0 0 0 0
+466 3 0 0 0 0 0 0 0 0
+468 3 0 0 0 0 0 0 0 0
+471 2 0 0 0 0 0 0 0 0
+479 2 1 1 0 0 0 0 0 0
+480 1 1 1 0 0 0 0 0 0
+485 2 0 0 0 0 0 1 0 0
+486 1 0 0 0 0 0 1 0 0
+510 2 0 0 0 0 0 0 0 0
+511 4 0 0 3 0 0 0 0 0
+fn=get_available_features
+258 3 1 1 0 0 0 1 0 0
+282 2 0 0 0 0 0 0 0 0
+288 2 0 0 0 0 0 0 0 0
+291 4 0 0 0 0 0 0 0 0
+293 1 0 0 0 0 0 0 0 0
+294 1 1 1 0 0 0 0 0 0
+295 4 0 0 0 0 0 0 0 0
+309 3 0 0 0 0 0 0 0 0
+312 4 0 0 0 0 0 0 0 0
+314 4 1 1 0 0 0 0 0 0
+316 4 0 0 0 0 0 0 0 0
+318 4 0 0 0 0 0 0 0 0
+320 4 0 0 0 0 0 0 0 0
+322 4 1 1 0 0 0 0 0 0
+324 4 0 0 0 0 0 0 0 0
+326 4 0 0 0 0 0 0 0 0
+328 4 0 0 0 0 0 0 0 0
+330 4 0 0 0 0 0 0 0 0
+331 2 1 1 0 0 0 0 0 0
+333 2 0 0 0 0 0 0 0 0
+334 1 0 0 0 0 0 0 0 0
+335 2 0 0 0 0 0 0 0 0
+336 2 1 1 0 0 0 0 0 0
+340 2 0 0 0 0 0 0 0 0
+342 3 0 0 0 0 0 0 0 0
+343 2 0 0 0 0 0 0 0 0
+344 1 0 0 0 0 0 0 0 0
+345 2 0 0 0 0 0 0 0 0
+347 2 1 1 0 0 0 0 0 0
+348 1 0 0 0 0 0 0 0 0
+352 2 0 0 0 0 0 0 0 0
+353 1 0 0 0 0 0 0 0 0
+356 2 0 0 0 0 0 0 0 0
+398 2 0 0 0 0 0 0 0 0
+400 2 0 0 0 0 0 0 0 0
+402 2 0 0 0 0 0 0 0 0
+404 2 0 0 0 0 0 0 0 0
+406 2 0 0 0 0 0 0 0 0
+408 2 0 0 0 0 0 0 0 0
+410 2 0 0 0 0 0 0 0 0
+415 2 0 0 1 0 0 1 0 0
+421 2 0 0 2 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/libsupc++/dyncast.cc
+fn=__dynamic_cast
+49 336 1 1 0 0 0 192 0 0
+50 144 1 1 96 0 0 48 0 0
+56 48 0 0 48 0 0 0 0 0
+68 144 0 0 96 0 0 0 0 0
+71 432 1 1 48 2 0 144 0 0
+72 144 0 0 48 5 0 0 0 0
+73 288 0 0 144 0 0 0 0 0
+75 144 0 0 48 0 0 0 0 0
+95 432 1 1 336 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc
+fn=_GLOBAL__sub_I_eh_alloc.cc
+121 1 1 1 0 0 0 1 0 0
+123 3 0 0 1 1 0 2 1 0
+124 2 0 0 0 0 0 0 0 0
+133 1 0 0 0 0 0 1 0 0
+135 1 0 0 0 0 0 1 0 0
+136 1 0 0 0 0 0 1 0 0
+338 4 1 1 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/libsupc++/guard.cc
+fn=__cxa_guard_acquire
+120 1 0 0 1 0 0 0 0 0
+239 1 0 0 0 0 0 0 0 0
+244 5 1 1 0 0 0 2 0 0
+249 2 0 0 0 0 0 0 0 0
+255 2 0 0 1 1 0 0 0 0
+265 4 1 1 1 0 0 0 0 0
+346 4 0 0 3 0 0 0 0 0
+fn=__cxa_guard_release
+389 1 1 1 0 0 0 0 0 0
+393 2 0 0 1 0 0 0 0 0
+398 2 0 0 2 0 0 0 0 0
+400 2 0 0 0 0 0 0 0 0
+426 1 0 0 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/libsupc++/si_class_type_info.cc
+fn=__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+51 560 1 1 80 0 0 240 0 0
+54 40 1 1 0 0 0 40 0 0
+55 40 0 0 0 0 0 40 0 0
+56 80 0 0 0 0 0 0 0 0
+57 40 0 0 0 0 0 40 0 0
+58 160 0 0 0 0 0 0 0 0
+72 360 1 1 280 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/libsupc++/tinfo.h
+fn=__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+68 40 0 0 0 0 0 0 0 0
+fn=__cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+68 8 0 0 0 0 0 0 0 0
+fn=__dynamic_cast
+68 96 0 0 48 6 0 0 0 0
+101 96 0 0 0 0 0 0 0 0
+148 144 0 0 0 0 0 96 0 0
+150 48 0 0 0 0 0 48 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/libsupc++/typeinfo
+fn=__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+122 80 1 1 80 1 0 0 0 0
+123 80 0 0 0 0 0 0 0 0
+fn=__cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+122 40 1 1 40 1 0 0 0 0
+123 72 0 0 8 1 1 0 0 0
+124 16 1 1 8 1 0 8 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/libsupc++/vmi_class_type_info.cc
+fn=__cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+87 160 2 2 24 0 0 88 0 0
+88 16 1 1 8 0 0 0 0 0
+89 16 0 0 8 0 0 8 0 0
+91 16 0 0 8 0 0 0 0 0
+100 8 0 0 0 0 0 8 0 0
+101 16 1 1 8 0 0 8 0 0
+102 16 0 0 0 0 0 0 0 0
+103 16 0 0 0 0 0 8 0 0
+104 32 0 0 8 0 0 0 0 0
+107 8 0 0 0 0 0 8 0 0
+302 96 0 0 80 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/compatibility-c++0x.cc
+fn=_GLOBAL__sub_I_compatibility_c__0x.cc
+184 4 0 0 1 1 0 2 0 0
+199 4 0 0 1 0 0 2 0 0
+214 6 1 1 1 1 0 2 1 0
+215 6 1 1 1 0 0 1 0 0
+256 3 1 1 1 0 0 1 0 0
+fn=std::(anonymous namespace)::generic_error_category::~generic_error_category()
+184 4 1 1 1 0 0 1 0 0
+fn=std::(anonymous namespace)::system_error_category::~system_error_category()
+199 4 1 1 1 1 1 1 0 0
+fn=std::error_category::error_category()
+176 10 1 1 4 1 0 2 0 0
+fn=std::error_category::~error_category()
+178 4 1 1 2 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/compatibility-thread-c++0x.cc
+fn=_GLOBAL__sub_I_compatibility_thread_c__0x.cc
+50 3 0 0 2 2 0 2 1 0
+124 4 1 1 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/cow-locale_init.cc
+fn=std::locale::_Impl::_M_init_extra(std::locale::facet**)
+100 10 1 1 0 0 0 6 0 0
+101 1 0 0 1 0 0 0 0 0
+102 1 0 0 1 0 0 0 0 0
+103 1 0 0 1 0 0 0 0 0
+112 3 1 1 1 0 0 1 0 0
+114 2 0 0 1 0 0 1 0 0
+115 2 0 0 1 0 0 1 0 0
+116 1 0 0 1 0 0 0 0 0
+125 3 1 1 1 0 0 1 0 0
+128 4 1 1 3 0 0 2 0 0
+129 4 0 0 3 0 0 2 0 0
+130 4 0 0 3 0 0 2 0 0
+132 5 1 1 4 0 0 2 0 0
+133 5 0 0 4 0 0 2 0 0
+134 4 0 0 3 0 0 2 0 0
+136 8 0 0 7 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/ctype.cc
+fn=std::ctype<wchar_t>::ctype(unsigned long)
+103 5 1 1 0 0 0 2 0 0
+105 6 0 0 2 1 0 4 0 0
+106 5 1 1 3 1 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/future.cc
+fn=(anonymous namespace)::future_error_category::~future_error_category()
+30 4 1 1 1 0 0 1 1 1
+fn=std::future_category()
+65 13 1 1 4 3 1 3 0 0
+79 5 1 1 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/ios.cc
+fn=std::ios_base::ios_base()
+76 8 1 1 0 0 0 0 0 0
+79 320 1 1 16 0 0 64 10 7
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/locale-inst.cc
+fn=_GLOBAL__sub_I_cxx11_locale_inst.cc
+380 2 0 0 1 0 0 0 0 0
+fn=_GLOBAL__sub_I_cxx11_wlocale_inst.cc
+380 2 0 0 1 0 0 0 0 0
+fn=_GLOBAL__sub_I_locale_inst.cc
+380 2 0 0 1 0 0 0 0 0
+fn=_GLOBAL__sub_I_wlocale_inst.cc
+380 2 0 0 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++11/system_error.cc
+fn=(anonymous namespace)::generic_error_category::~generic_error_category()
+39 4 1 1 1 0 0 1 0 0
+fn=(anonymous namespace)::system_error_category::~system_error_category()
+55 4 1 1 1 1 1 1 1 1
+fn=_GLOBAL__sub_I_system_error.cc
+327 4 0 0 1 1 0 1 0 0
+328 4 1 1 1 0 0 0 0 0
+379 3 1 1 0 0 0 0 0 0
+fn=std::_V2::error_category::~error_category()
+341 6 0 0 3 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++17/memory_resource.cc
+fn=_GLOBAL__sub_I_memory_resource.cc
+92 4 0 0 1 0 0 1 0 0
+93 4 1 1 1 0 0 1 0 0
+146 4 0 0 1 0 0 0 0 0
+1441 3 0 0 0 0 0 0 0 0
+fn=std::pmr::(anonymous namespace)::constant_init<std::atomic<std::pmr::memory_resource*> >::~constant_init()
+89 2 1 1 1 0 0 0 0 0
+fn=std::pmr::(anonymous namespace)::constant_init<std::pmr::(anonymous namespace)::newdel_res_t>::~constant_init()
+89 2 1 1 1 0 0 0 0 0
+fn=std::pmr::(anonymous namespace)::constant_init<std::pmr::(anonymous namespace)::null_res_t>::~constant_init()
+89 2 0 0 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++98/bitmap_allocator.cc
+fn=_GLOBAL__sub_I_bitmap_allocator.cc
+127 2 0 0 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++98/codecvt.cc
+fn=std::codecvt<char, char, __mbstate_t>::codecvt(unsigned long)
+38 5 1 1 0 0 0 2 0 0
+41 5 0 0 2 0 0 3 1 1
+42 4 0 0 3 0 0 0 0 0
+fn=std::codecvt<wchar_t, char, __mbstate_t>::codecvt(unsigned long)
+118 5 1 1 0 0 0 2 0 0
+121 5 0 0 2 0 0 3 0 0
+122 4 0 0 3 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++98/ios_init.cc
+fn=std::ios_base::Init::Init()
+78 56 2 1 0 0 0 42 0 0
+80 14 0 0 0 0 0 0 0 0
+83 2 0 0 0 0 0 1 1 0
+85 2 0 0 2 2 0 0 0 0
+86 2 0 0 2 1 0 0 0 0
+87 2 0 0 2 0 0 0 0 0
+102 2 0 0 2 0 0 0 0 0
+103 2 0 0 2 0 0 0 0 0
+104 2 0 0 2 0 0 0 0 0
+121 56 1 0 49 0 0 0 0 0
+fn=std::ios_base::Init::~Init()
+123 8 1 1 0 0 0 0 0 0
+127 20 0 0 6 0 0 0 0 0
+134 2 0 0 2 2 2 1 0 0
+135 2 0 0 2 1 1 1 0 0
+136 2 1 1 2 1 1 1 0 0
+139 2 0 0 2 2 2 1 0 0
+140 2 0 0 2 1 1 1 0 0
+141 2 0 0 2 1 1 1 0 0
+147 2 0 0 1 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++98/ios_locale.cc
+fn=std::ios_base::_M_init()
+39 64 1 1 8 0 0 24 0 0
+41 8 0 0 0 0 0 8 0 0
+42 8 0 0 0 0 0 8 0 0
+43 8 1 1 0 0 0 8 0 0
+44 64 0 0 24 1 0 24 0 0
+45 56 1 1 40 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++98/locale.cc
+fn=std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*)
+322 352 2 2 0 0 0 192 0 0
+323 64 0 0 0 0 0 0 0 0
+325 64 0 0 32 1 0 32 0 0
+328 128 0 0 32 0 0 0 0 0
+366 64 0 0 32 0 0 0 0 0
+367 96 0 0 32 0 0 0 0 0
+403 32 0 0 0 0 0 32 0 0
+418 4800 1 1 1600 0 0 0 0 0
+420 1536 0 0 1536 0 0 0 0 0
+421 4608 1 1 0 0 0 0 0 0
+428 256 1 1 224 0 0 0 0 0
+fn=std::locale::facet::_S_get_c_locale()
+215 28 1 1 0 0 0 14 0 0
+217 28 0 0 14 0 0 0 0 0
+225 28 0 0 14 0 0 0 0 0
+226 28 0 0 28 0 0 0 0 0
+fn=std::locale::facet::_S_get_c_name()
+230 21 1 1 7 0 0 0 0 0
+fn=std::locale::facet::_S_initialize_once()
+208 1 1 1 0 0 0 0 0 0
+210 4 0 0 1 1 0 0 0 0
+fn=std::locale::id::_M_id() const
+504 110 1 1 0 0 0 0 0 0
+505 330 0 0 110 5 4 0 0 0
+518 96 0 0 48 0 0 0 0 0
+523 48 0 0 0 0 0 0 0 0
+525 96 0 0 48 0 0 0 0 0
+542 158 0 0 48 0 0 0 0 0
+543 110 0 0 110 0 0 0 0 0
+fn=std::locale::locale(std::locale::_Impl*)
+88 2 1 1 0 0 0 1 0 0
+89 1 0 0 1 0 0 0 0 0
+fn=std::locale::operator=(std::locale const&)
+120 32 1 1 0 0 0 8 0 0
+121 40 0 0 16 0 0 0 0 0
+123 24 1 1 8 0 0 0 0 0
+125 16 0 0 8 0 0 8 0 0
+127 24 0 0 16 0 0 0 0 0
+fn=std::locale::~locale()
+91 16 1 1 0 0 0 8 0 0
+93 32 0 0 16 0 0 0 0 0
+95 16 0 0 16 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++98/locale_init.cc
+fn=std::locale::_Impl::_Impl(unsigned long)
+471 12 2 2 1 0 0 7 0 0
+474 2 0 0 0 0 0 2 1 1
+476 53 0 0 0 0 0 49 6 6
+477 53 1 1 0 0 0 49 6 6
+480 17 0 0 0 0 0 12 3 3
+481 2 0 0 0 0 0 1 0 0
+482 2 1 1 1 1 0 2 0 0
+491 6 0 0 2 2 1 1 0 0
+492 3 0 0 1 1 0 1 0 0
+514 4 0 0 1 1 0 1 0 0
+518 3 1 1 1 1 0 1 0 0
+521 3 0 0 1 1 0 1 0 0
+522 3 0 0 1 0 0 1 0 0
+544 4 0 0 1 0 0 1 0 0
+548 3 1 1 1 1 0 1 0 0
+567 7 1 1 0 0 0 6 0 0
+569 3 0 0 0 0 0 1 0 0
+574 6 0 0 4 0 0 3 0 0
+575 4 1 1 3 0 0 2 0 0
+576 4 0 0 3 0 0 2 0 0
+577 5 1 1 3 0 0 2 0 0
+579 4 0 0 3 0 0 2 0 0
+580 4 0 0 3 0 0 2 0 0
+581 5 1 1 3 0 0 2 0 0
+582 5 0 0 3 0 0 2 0 0
+584 11 1 1 9 0 0 0 0 0
+fn=std::locale::_S_initialize()
+321 44 1 1 0 0 0 0 0 0
+323 44 0 0 22 0 0 0 0 0
+326 66 0 0 22 0 0 0 0 0
+328 44 0 0 22 0 0 0 0 0
+fn=std::locale::_S_initialize_once()
+311 2 1 1 0 0 0 0 0 0
+314 6 0 0 1 1 0 2 0 0
+315 2 0 0 0 0 0 1 0 0
+316 2 0 0 1 0 0 0 0 0
+317 1 0 0 0 0 0 0 0 0
+fn=std::locale::locale()
+256 132 1 1 0 0 0 88 1 1
+258 22 0 0 0 0 0 22 0 0
+269 66 0 0 22 0 0 22 0 0
+270 66 1 1 22 0 0 0 0 0
+276 88 1 1 88 0 0 0 0 0
+fl=/build/gcc/src/gcc/libstdc++-v3/src/c++98/parallel_settings.cc
+fn=_GLOBAL__sub_I_parallel_settings.cc
+42 2 0 0 1 0 0 0 0 0
+fl=/usr/include/wchar.h
+fn=std::ctype<wchar_t>::_M_initialize_ctype()
+320 512 1 1 256 1 0 256 0 0
+326 256 0 0 128 1 0 128 0 0
+fl=???
+fn=(below main)
+0 59 6 6 16 6 0 18 1 0
+fn=???
+0 1732657 19345 4987 568080 18180 1284 342803 4561 2739
+fn=MPI::Comm::Comm()
+0 12 1 1 6 2 0 4 1 0
+fn=MPI::Comm::~Comm()
+0 26 2 2 8 0 0 8 0 0
+fn=MPI::Comm_Null::~Comm_Null()
+0 27 1 1 9 0 0 9 0 0
+fn=MPI::Datatype::~Datatype()
+0 405 2 2 135 0 0 135 11 11
+fn=MPI::Errhandler::~Errhandler()
+0 36 2 2 12 0 0 12 1 1
+fn=MPI::File::~File()
+0 1 1 1 1 0 0 0 0 0
+fn=MPI::Group::~Group()
+0 18 1 1 6 0 0 6 0 0
+fn=MPI::Info::~Info()
+0 9 1 1 3 0 0 3 0 0
+fn=MPI::Intracomm::Intracomm(ompi_communicator_t*)
+0 64 5 5 20 0 0 20 0 0
+fn=MPI::Intracomm::~Intracomm()
+0 26 2 2 8 0 0 8 1 1
+fn=MPI::Is_initialized()
+0 34 2 2 12 0 0 6 0 0
+fn=MPI::Op::~Op()
+0 126 2 2 42 0 0 42 3 3
+fn=MPI::Request::~Request()
+0 9 1 1 3 0 0 3 1 1
+fn=MPI::Win::~Win()
+0 9 1 1 3 0 0 3 1 1
+fn=NBC_Init_comm
+0 60 1 1 20 0 0 20 0 0
+fn=NBC_Start
+0 810 54 1 324 0 0 216 0 0
+fn=OMPI_C_MPI_COMM_NULL_DELETE_FN
+0 14 1 1 7 0 0 0 0 0
+fn=OMPI_C_MPI_WIN_NULL_DELETE_FN
+0 160 16 1 80 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Commit
+0 121 9 9 48 20 0 22 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Deregister_event_handler
+0 320 8 6 124 50 0 76 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Fence_nb
+0 945 78 28 305 53 0 149 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Finalize
+0 327 32 25 126 16 3 64 4 0
+fn=OPAL_MCA_PMIX3X_PMIx_Get
+0 1442 93 9 520 67 0 293 2 0
+fn=OPAL_MCA_PMIX3X_PMIx_Get_nb
+0 3383 147 23 846 32 0 886 23 0
+fn=OPAL_MCA_PMIX3X_PMIx_Get_version
+0 4 2 1 2 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Init
+0 1340 75 62 382 46 3 257 29 2
+fn=OPAL_MCA_PMIX3X_PMIx_Job_control_nb
+0 254 22 22 104 27 0 38 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Notify_event
+0 1024 27 27 205 12 0 153 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Put
+0 393 18 9 144 36 0 81 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Query_info_nb
+0 381 32 32 141 4 0 87 7 7
+fn=OPAL_MCA_PMIX3X_PMIx_Register_event_handler
+0 395 29 8 148 34 0 105 0 0
+fn=OPAL_MCA_PMIX3X_PMIx_Store_internal
+0 165 12 12 66 13 0 35 0 0
+fn=OPAL_MCA_PMIX3X_pmix_argv_append
+0 627 5 1 231 6 0 198 1 0
+fn=OPAL_MCA_PMIX3X_pmix_argv_append_nosize
+0 2298 25 4 738 3 1 681 1 0
+fn=OPAL_MCA_PMIX3X_pmix_argv_append_unique_nosize
+0 133 2 2 41 0 0 28 0 0
+fn=OPAL_MCA_PMIX3X_pmix_argv_count
+0 1676 7 1 459 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_argv_free
+0 615 8 3 198 6 1 99 0 0
+fn=OPAL_MCA_PMIX3X_pmix_argv_join
+0 165 4 4 30 1 0 24 0 0
+fn=OPAL_MCA_PMIX3X_pmix_argv_split
+0 32 4 1 0 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_basename
+0 2580 4 4 540 0 0 140 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrop_base_select
+0 377 12 12 154 10 0 74 1 1
+fn=OPAL_MCA_PMIX3X_pmix_bfrop_buffer_extend
+0 3702 55 5 1388 21 0 766 2 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrop_get_data_type
+0 266 6 1 98 0 0 56 1 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrop_store_data_type
+0 494 9 1 156 0 0 104 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrop_too_small
+0 900 13 1 270 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_assign_module
+0 46 4 4 16 4 0 10 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_copy
+0 114 8 2 24 4 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_copy_value
+0 108 9 2 30 0 0 30 1 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack
+0 1680 30 3 432 16 0 336 1 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_bo
+0 70 3 3 16 1 0 10 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_bool
+0 117 9 3 36 0 0 21 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_buf
+0 84 3 2 18 0 0 12 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_buffer
+0 1968 33 3 672 69 1 336 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_byte
+0 1216 22 2 456 0 0 266 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_cmd
+0 30 10 1 15 1 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_info
+0 229 12 5 49 3 0 40 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_info_directives
+0 10 0 0 5 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_int32
+0 3080 21 2 1001 30 0 616 3 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_int64
+0 988 24 3 266 0 0 171 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_kval
+0 68 2 2 14 2 0 10 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_proc
+0 192 16 4 40 8 0 32 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_query
+0 60 5 5 16 2 0 10 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_rank
+0 10 1 0 5 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_scope
+0 4 0 0 2 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_sizet
+0 342 17 2 95 13 0 76 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_status
+0 126 8 4 33 0 0 24 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_string
+0 750 26 4 210 6 1 135 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_val
+0 84 10 4 21 10 3 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_pack_value
+0 58 2 1 14 2 0 10 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack
+0 1740 63 6 561 35 0 345 10 3
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_bo
+0 65 5 5 17 1 0 14 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_byte
+0 416 8 2 195 1 0 91 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_darray
+0 89 8 8 21 2 2 18 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_info
+0 1208 16 13 137 4 0 472 34 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_info_directives
+0 10 1 1 5 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_int16
+0 84 4 2 30 0 0 16 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_int32
+0 2058 35 3 735 18 0 394 6 4
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_int64
+0 147 6 3 45 0 0 24 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_kval
+0 92 6 6 29 1 0 18 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_proc
+0 186 7 6 30 0 0 59 2 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_rank
+0 4 0 0 2 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_sizet
+0 114 10 5 33 1 0 24 2 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_status
+0 240 16 2 80 0 0 48 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_string
+0 696 16 4 192 2 0 144 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_val
+0 296 23 10 91 6 2 52 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_unpack_value
+0 185 11 4 40 5 0 30 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_value_load
+0 228 24 4 56 6 1 71 0 0
+fn=OPAL_MCA_PMIX3X_pmix_bfrops_base_value_xfer
+0 1064 29 6 327 13 2 252 1 0
+fn=OPAL_MCA_PMIX3X_pmix_class_finalize
+0 338 3 2 97 9 2 52 0 0
+fn=OPAL_MCA_PMIX3X_pmix_class_initialize
+0 5110 82 8 1397 43 0 916 19 0
+fn=OPAL_MCA_PMIX3X_pmix_deregister_params
+0 3 1 0 1 0 0 1 1 0
+fn=OPAL_MCA_PMIX3X_pmix_gds_base_assign_module
+0 193 4 4 55 8 0 25 0 0
+fn=OPAL_MCA_PMIX3X_pmix_gds_base_select
+0 331 17 13 142 18 0 68 1 1
+fn=OPAL_MCA_PMIX3X_pmix_hash_fetch
+0 1337 49 11 368 10 0 311 6 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_remove_data
+0 392 8 8 126 7 1 86 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_store
+0 321 16 4 105 13 0 81 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_get_first_key_ptr
+0 3 1 0 1 1 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_get_first_key_uint64
+0 18 1 1 6 1 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_get_next_key_ptr
+0 2101 2 2 328 133 36 36 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_get_next_key_uint64
+0 22898 2 2 3284 1625 296 12 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_get_value_ptr
+0 101545 56 5 16293 317 128 5026 39 1
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_get_value_uint64
+0 540 18 2 114 32 0 31 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_init
+0 45 4 1 9 3 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_init2
+0 468 12 3 90 0 0 153 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_remove_all
+0 69169 1 1 18840 12 3 12503 1217 999
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_set_value_ptr
+0 43034 43 4 7258 12 0 3400 86 53
+fn=OPAL_MCA_PMIX3X_pmix_hash_table_set_value_uint64
+0 112 6 2 24 0 0 20 0 0
+fn=OPAL_MCA_PMIX3X_pmix_home_directory
+0 4 2 1 2 1 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_hotel_init
+0 9257 5 5 2568 2 0 2065 669 667
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_close
+0 28 3 3 13 6 1 6 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_close
+0 378 2 2 98 28 9 70 1 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_find
+0 1200 121 14 409 55 5 223 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_find_finalize
+0 2 1 1 1 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_parse_requested
+0 170 19 2 50 0 0 60 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_repository_add
+0 141 7 7 39 7 2 17 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_repository_finalize
+0 1049 7 7 435 29 5 167 11 3
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_repository_get_components
+0 128 16 2 40 0 0 32 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_repository_init
+0 56 5 4 23 6 0 11 1 1
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_repository_open
+0 2784 252 16 970 289 2 702 28 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_repository_release
+0 408 4 3 106 30 11 90 6 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_unload
+0 463 4 4 127 15 0 106 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_component_var_register
+0 1628 11 1 444 7 0 518 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_components_close
+0 941 6 6 402 81 9 197 20 2
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_components_filter
+0 330 39 4 130 0 0 120 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_close
+0 784 10 6 257 62 2 135 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_components_close
+0 40 1 1 20 14 1 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_components_open
+0 838 51 8 258 21 1 153 1 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_components_register
+0 1500 68 8 288 52 0 407 6 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_is_open
+0 88 8 0 44 10 3 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_is_registered
+0 88 0 0 44 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_open
+0 437 30 3 136 47 0 95 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_register
+0 1531 97 11 539 58 0 341 6 6
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_framework_var_register
+0 231 9 2 88 0 0 77 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_open
+0 259 24 21 56 15 0 83 1 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_select
+0 94 9 9 33 1 0 25 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_cache_files
+0 231 21 20 45 11 2 76 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_deregister
+0 2817 8 7 877 111 45 430 22 10
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_finalize
+0 5133 12 12 1821 198 47 309 2 1
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_find
+0 26 2 2 10 0 0 5 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_get
+0 1992 4 4 581 104 40 166 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_get_value
+0 40 4 4 11 0 0 4 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_group_deregister
+0 2408 9 4 963 93 32 393 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_group_find
+0 156 11 1 0 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_group_register
+0 154 10 1 0 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_group_set_var_flag
+0 433 31 4 145 15 0 79 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_init
+0 202 19 16 65 7 0 47 6 5
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_register
+0 2100 5 1 980 0 0 1120 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_register_synonym
+0 270 4 3 70 0 0 60 0 0
+fn=OPAL_MCA_PMIX3X_pmix_mca_base_var_set_flag
+0 315 21 3 90 10 0 27 0 0
+fn=OPAL_MCA_PMIX3X_pmix_output
+0 26 2 2 4 1 0 10 3 0
+fn=OPAL_MCA_PMIX3X_pmix_output_check_verbosity
+0 4955 63 2 1203 38 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_output_close
+0 37 2 2 9 2 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_output_finalize
+0 34 3 3 16 3 2 8 0 0
+fn=OPAL_MCA_PMIX3X_pmix_output_get_verbosity
+0 24 6 1 6 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_output_init
+0 824 14 14 38 13 1 545 76 38
+fn=OPAL_MCA_PMIX3X_pmix_output_open
+0 6 0 0 0 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_output_reopen
+0 1 1 1 0 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_pointer_array_add
+0 11616 65 6 2317 40 0 774 36 0
+fn=OPAL_MCA_PMIX3X_pmix_pointer_array_init
+0 312 14 3 48 1 0 96 0 0
+fn=OPAL_MCA_PMIX3X_pmix_pointer_array_set_item
+0 13656 6 6 4248 10 4 1426 0 0
+fn=OPAL_MCA_PMIX3X_pmix_preg_base_select
+0 117 12 12 47 4 0 28 0 0
+fn=OPAL_MCA_PMIX3X_pmix_psec_base_assign_module
+0 46 4 4 16 6 0 10 0 0
+fn=OPAL_MCA_PMIX3X_pmix_psec_base_select
+0 125 11 11 50 7 0 29 0 0
+fn=OPAL_MCA_PMIX3X_pmix_pshmem_base_select
+0 108 7 6 42 2 1 25 0 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_connect
+0 50 4 4 16 2 0 12 0 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_connect_to_peer
+0 33 4 3 12 5 0 7 1 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_lost_connection
+0 148 10 10 62 7 3 23 1 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_process_msg
+0 1600 134 14 650 61 0 300 7 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_recv_blocking
+0 96 5 5 26 0 0 18 1 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_recv_handler
+0 1899 195 22 816 39 0 400 0 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_select
+0 169 9 9 72 5 0 39 0 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_send_blocking
+0 48 4 4 13 0 0 9 0 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_send_handler
+0 1700 121 11 612 29 0 383 1 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_send_recv
+0 2439 175 16 949 127 0 527 11 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_set_nonblocking
+0 23 2 2 5 1 0 4 0 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_set_notification_cbfunc
+0 60 4 4 24 2 0 16 0 0
+fn=OPAL_MCA_PMIX3X_pmix_ptl_base_stop_listening
+0 22 2 2 11 2 1 4 0 0
+fn=OPAL_MCA_PMIX3X_pmix_register_params
+0 417 28 28 39 5 0 194 4 4
+fn=OPAL_MCA_PMIX3X_pmix_rte_finalize
+0 5771 20 20 2034 580 40 49 3 0
+fn=OPAL_MCA_PMIX3X_pmix_rte_init
+0 506 53 41 198 57 4 112 14 6
+fn=OPAL_MCA_PMIX3X_pmix_show_help_finalize
+0 12 1 1 5 1 1 4 0 0
+fn=OPAL_MCA_PMIX3X_pmix_show_help_init
+0 43 3 3 20 1 0 9 0 0
+fn=OPAL_MCA_PMIX3X_pmix_thread_join
+0 11 1 1 4 2 2 3 0 0
+fn=OPAL_MCA_PMIX3X_pmix_thread_start
+0 12 0 0 3 1 0 1 0 0
+fn=OPAL_MCA_PMIX3X_pmix_tmp_directory
+0 17 2 2 4 0 0 3 0 0
+fn=OPAL_MCA_PMIX3X_pmix_util_keyval_parse
+0 1328 6 5 414 5 0 170 3 1
+fn=OPAL_MCA_PMIX3X_pmix_util_keyval_parse_finalize
+0 9 2 2 2 1 1 2 0 0
+fn=OPAL_MCA_PMIX3X_pmix_util_keyval_parse_init
+0 2 1 1 1 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_util_keyval_save_internal_envars
+0 10 1 1 4 0 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_value_array_set_size
+0 3777 23 2 1017 5 0 828 0 0
+fn=OPAL_MCA_PMIX3X_pmix_value_load
+0 22 7 1 11 5 0 0 0 0
+fn=OPAL_MCA_PMIX3X_pmix_value_xfer
+0 21 3 0 21 1 0 0 0 0
+fn=PMPI_Allgather
+0 124 13 13 49 0 0 19 0 0
+fn=PMPI_Alloc_mem
+0 1683 85 5 528 64 0 264 1 1
+fn=PMPI_Barrier
+0 608 64 4 240 64 0 96 0 0
+fn=PMPI_Bcast
+0 100 12 12 32 3 0 11 0 0
+fn=PMPI_Comm_free
+0 88 3 3 34 5 0 14 0 0
+fn=PMPI_Comm_rank
+0 56 6 3 20 2 0 6 0 0
+fn=PMPI_Comm_size
+0 87 9 3 33 6 0 9 1 1
+fn=PMPI_Comm_split
+0 47 4 3 14 1 0 7 0 0
+fn=PMPI_Comm_split_type
+0 53 5 4 15 2 0 7 0 0
+fn=PMPI_Finalize
+0 9 1 1 5 1 0 0 0 0
+fn=PMPI_Free_mem
+0 297 32 2 66 0 0 33 0 0
+fn=PMPI_Init
+0 41 5 5 14 3 1 9 0 0
+fn=PMPI_Initialized
+0 38 2 2 16 6 1 8 0 0
+fn=PMPI_Win_allocate_shared
+0 880 96 5 240 53 0 112 0 0
+fn=PMPI_Win_free
+0 608 80 5 256 35 0 128 4 0
+fn=PMPI_Wtime
+0 83204 48 3 35202 68 1 6401 0 0
+fn=Wrapper_Comm_free(comm_package*)
+0 19 1 0 6 0 0 4 0 0
+fn=Wrapper_Create_Allgather_param(int, comm_package const*, int*, allgather_param*)
+0 1328 112 6 576 32 0 192 0 0
+fn=Wrapper_Get_localpointer(void*, int, int, void**)
+0 256 16 0 96 0 0 96 0 0
+fn=Wrapper_MPI_Sharedmemory_alloc(int, int, int, comm_package*, void**, ompi_win_t**)
+0 768 97 5 288 16 0 160 16 1
+fn=Wrapper_MPI_ShmemBridgeComm_create(ompi_communicator_t*, comm_package*)
+0 79 8 6 22 0 0 19 1 1
+fn=Wrapper_Param_Free(comm_package*, allgather_param*)
+0 336 48 3 128 5 0 80 0 0
+fn=Wrapper_ShmemcommSizeset_free(comm_package*, int*)
+0 16 0 0 5 0 0 4 0 0
+fn=Wrapper_ShmemcommSizeset_gather(comm_package const*, int**)
+0 38 3 3 12 0 0 6 0 0
+fn=_Exit
+0 7 2 2 1 1 0 0 0 0
+fn=_GLOBAL__sub_I_count
+0 7 1 1 2 0 0 2 0 0
+fn=_IO_cleanup
+0 167 15 15 52 2 0 27 0 0
+fn=_IO_default_finish
+0 128 12 2 48 0 0 8 0 0
+fn=_IO_default_setbuf
+0 53 4 4 9 0 0 15 0 0
+fn=_IO_default_uflow
+0 4512 11 1 1090 0 0 651 0 0
+fn=_IO_default_xsputn
+0 921561 520 5 215228 37 1 198547 354 112
+fn=_IO_do_write@@GLIBC_2.2.5
+0 197 16 1 33 0 0 32 0 0
+fn=_IO_doallocbuf
+0 234 22 3 72 7 0 36 2 0
+fn=_IO_enable_locks
+0 22 1 1 9 4 1 1 0 0
+fn=_IO_file_close
+0 24 6 1 8 0 0 0 0 0
+fn=_IO_file_close_it@@GLIBC_2.2.5
+0 440 36 6 80 0 0 128 0 0
+fn=_IO_file_doallocate
+0 471 37 6 110 3 0 63 3 0
+fn=_IO_file_finish@@GLIBC_2.2.5
+0 104 18 3 24 0 0 16 0 0
+fn=_IO_file_fopen@@GLIBC_2.2.5
+0 742 41 8 165 7 3 104 0 0
+fn=_IO_file_open
+0 349 21 4 68 0 0 72 1 0
+fn=_IO_file_overflow@@GLIBC_2.2.5
+0 8085 50 5 2148 0 0 1187 0 0
+fn=_IO_file_read
+0 186 6 1 62 0 0 0 0 0
+fn=_IO_file_seek
+0 6 1 1 2 0 0 0 0 0
+fn=_IO_file_seekoff@@GLIBC_2.2.5
+0 198 13 13 50 0 0 39 0 0
+fn=_IO_file_setbuf@@GLIBC_2.2.5
+0 16 2 1 3 0 0 8 0 0
+fn=_IO_file_stat
+0 45 14 2 9 0 0 0 0 0
+fn=_IO_file_sync@@GLIBC_2.2.5
+0 126 3 3 49 1 0 21 0 0
+fn=_IO_file_underflow@@GLIBC_2.2.5
+0 1195 35 10 357 0 0 285 1 0
+fn=_IO_file_write@@GLIBC_2.2.5
+0 592 47 2 128 0 0 80 0 0
+fn=_IO_file_xsgetn
+0 852 16 8 180 0 0 152 0 0
+fn=_IO_file_xsputn@@GLIBC_2.2.5
+0 6508 144 8 1328 33 2 752 14 0
+fn=_IO_flush_all_lockp
+0 126 12 12 39 8 4 20 0 0
+fn=_IO_free_backup_area
+0 24 1 1 8 0 0 10 0 0
+fn=_IO_getline
+0 726 3 1 0 0 0 0 0 0
+fn=_IO_getline_info
+0 15652 21 8 3443 0 0 3188 0 0
+fn=_IO_link_in
+0 1326 57 11 496 27 1 248 0 0
+fn=_IO_new_file_init_internal
+0 108 6 1 36 0 0 48 0 0
+fn=_IO_no_init
+0 90706 216 3 19690 0 0 31648 98 8
+fn=_IO_old_init
+0 104962 327 3 11814 108 1 65582 61 6
+fn=_IO_padn
+0 1074 132 6 264 0 0 176 28 0
+fn=_IO_seekoff_unlocked
+0 63 4 4 13 1 0 6 0 0
+fn=_IO_setb
+0 119164 238 2 27924 0 0 27924 41 2
+fn=_IO_sgetn
+0 120 2 1 24 2 0 8 0 0
+fn=_IO_sputbackc
+0 11913 26 3 4389 0 0 1881 3 0
+fn=_IO_str_init_static_internal
+0 141336 280 3 19630 0 0 47308 3 2
+fn=_IO_str_overflow
+0 4275 172 5 900 0 0 945 15 0
+fn=_IO_str_underflow
+0 2880 19 3 960 0 0 0 0 0
+fn=_IO_switch_to_get_mode
+0 475 12 3 152 0 0 133 0 0
+fn=_IO_un_link
+0 80 6 1 28 0 0 0 0 0
+fn=_IO_unsave_markers
+0 80 12 2 32 0 0 8 0 0
+fn=__GI__IO_un_link.part.0
+0 1201 61 12 419 0 0 201 0 0
+fn=__GI___close_nocancel
+0 558 47 1 93 0 0 0 0 0
+fn=__GI___tunables_init
+0 28810 6 6 5582 36 36 6 1 1
+fn=__GI_strstr
+0 589 30 10 151 6 1 115 0 0
+fn=____strtod_l_internal
+0 1434 40 40 218 7 2 94 0 0
+fn=____strtof_l_internal
+0 423 40 40 67 2 2 41 2 0
+fn=____strtol_l_internal
+0 17256 75 10 2727 15 0 1690 4 0
+fn=____strtoul_l_internal
+0 40418 132 15 5757 66 8 2736 6 0
+fn=__acos_finite
+0 8 1 1 4 0 0 0 0 0
+fn=__add_to_environ
+0 25788 76 13 2668 12 0 2640 0 0
+fn=__alloc_dir
+0 400 15 3 70 2 0 120 4 3
+fn=__asin_finite
+0 8 1 1 4 0 0 0 0 0
+fn=__asprintf_chk
+0 102950 234 4 14200 0 0 31950 92 0
+fn=__atan2_finite
+0 9 2 2 4 0 0 0 0 0
+fn=__call_tls_dtors
+0 36 8 3 15 4 0 6 0 0
+fn=__close_nocancel
+0 108 11 1 18 0 0 0 0 0
+fn=__condvar_confirm_wakeup
+0 119 16 1 51 0 0 0 0 0
+fn=__condvar_dec_grefs
+0 119 16 1 51 2 0 0 0 0
+fn=__ctype_b_loc
+0 324 40 1 243 20 0 0 0 0
+fn=__ctype_init
+0 51 6 2 30 15 0 9 1 0
+fn=__ctype_toupper_loc
+0 32 1 1 24 0 0 0 0 0
+fn=__cxa_atexit
+0 264 2 1 0 0 0 0 0 0
+fn=__cxa_finalize
+0 63337 146 9 10591 2400 0 788 53 0
+fn=__deallocate_stack
+0 74 8 4 22 2 0 24 2 0
+fn=__default_morecore
+0 120 11 1 15 0 0 15 0 0
+fn=__errno_location
+0 72 4 1 54 4 0 0 0 0
+fn=__exp_finite
+0 9 2 2 4 0 0 0 0 0
+fn=__fcntl64_nocancel_adjusted
+0 672 10 2 168 0 0 42 0 0
+fn=__fopen_internal
+0 528 24 4 80 0 0 140 6 2
+fn=__free_in6ai
+0 4 2 2 1 0 0 0 0 0
+fn=__free_tcb
+0 26 2 1 8 0 0 2 0 0
+fn=__gconv_btwoc_ascii
+0 768 1 1 128 0 0 0 0 0
+fn=__getdents
+0 216 11 2 24 0 0 0 0 0
+fn=__gettimeofday_syscall
+0 1336 19 0 167 0 0 0 0 0
+fn=__htmlDefaultSAXHandler
+0 7 1 1 2 1 0 1 0 0
+fn=__inet_aton_exact
+0 18 2 2 5 0 0 3 0 0
+fn=__init_misc
+0 25 2 2 7 0 0 5 1 0
+fn=__internal_atexit
+0 3520 3 3 968 2 0 880 16 0
+fn=__isoc99_fscanf
+0 75 3 3 12 0 0 30 0 0
+fn=__isoc99_sscanf
+0 9800 43 6 1372 0 0 3332 4 0
+fn=__libc_alloca_cutoff
+0 638 46 4 116 22 0 0 0 0
+fn=__libc_allocate_once_slow
+0 25 2 2 6 0 0 5 0 0
+fn=__libc_csu_init
+0 41 2 2 9 1 0 9 0 0
+fn=__libc_disable_asynccancel
+0 1824 64 2 456 23 0 0 0 0
+fn=__libc_early_init
+0 8 1 1 3 0 0 3 1 1
+fn=__libc_enable_asynccancel
+0 1824 88 2 456 10 0 0 0 0
+fn=__libc_pthread_init
+0 226 3 3 62 5 0 34 5 5
+fn=__libc_scratch_buffer_set_array_size
+0 2520 20 5 700 0 0 420 1 0
+fn=__libc_sigaction
+0 522 12 6 144 0 0 120 4 2
+fn=__libc_thread_freeres
+0 22 4 2 8 4 4 10 0 0
+fn=__lll_lock_wait
+0 22 1 1 6 0 0 0 0 0
+fn=__log_finite
+0 9 2 2 4 0 0 0 0 0
+fn=__malloc_arena_thread_freeres
+0 1866 12 6 360 59 6 220 0 0
+fn=__memchr_avx2
+0 7672 32 10 879 47 32 0 0 0
+fn=__memcmp_avx2_movbe
+0 36610 258 7 7515 237 55 0 0 0
+fn=__memcpy_avx_unaligned_erms
+0 218012 519 13 97599 343 8 84316 2387 1904
+fn=__memcpy_chk
+0 126 15 3 28 5 0 0 0 0
+fn=__memmove_chk
+0 90 9 6 20 7 0 0 0 0
+fn=__mempcpy_avx_unaligned_erms
+0 12044 109 1 0 0 0 0 0 0
+fn=__memset_avx2_erms
+0 446897 26 1 37 3 0 446638 6837 5847
+fn=__memset_avx2_unaligned_erms
+0 61187 107 4 3517 33 0 21256 5317 3841
+fn=__memset_chk
+0 40 4 4 8 4 0 0 0 0
+fn=__mpn_construct_double
+0 32 2 1 4 0 0 0 0 0
+fn=__mpn_construct_float
+0 11 2 2 2 0 0 0 0 0
+fn=__mpn_extract_double
+0 672 32 2 32 0 0 128 5 0
+fn=__mpn_lshift
+0 624 36 2 78 0 0 39 0 0
+fn=__mpn_mul
+0 688 48 3 208 16 1 176 0 0
+fn=__mpn_mul_1
+0 4230 96 6 575 0 0 397 6 0
+fn=__mpn_rshift
+0 738 48 3 123 0 0 82 0 0
+fn=__new_exitfn
+0 3182 4 4 704 5 0 359 0 0
+fn=__nptl_deallocate_tsd
+0 685 8 6 109 12 11 10 0 0
+fn=__open_2
+0 54 2 1 0 0 0 0 0 0
+fn=__open_nocancel
+0 2728 110 9 192 1 0 176 32 0
+fn=__overflow
+0 4032 32 2 896 15 0 224 0 0
+fn=__pow_finite
+0 8 1 1 4 0 0 0 0 0
+fn=__pread64_nocancel
+0 35 1 1 5 0 0 0 0 0
+fn=__printf_fp
+0 224 32 2 64 14 0 0 0 0
+fn=__printf_fp_l
+0 24873 1172 75 5006 159 5 3046 51 0
+fn=__pthread_attr_copy
+0 84 8 4 34 2 0 28 0 0
+fn=__pthread_clockjoin_ex
+0 164 14 7 38 5 2 28 0 0
+fn=__pthread_disable_asynccancel
+0 1808 45 2 452 13 0 0 0 0
+fn=__pthread_enable_asynccancel
+0 1808 32 2 452 15 0 0 0 0
+fn=__pthread_initialize_minimal
+0 141 14 14 24 5 1 41 6 2
+fn=__pthread_mutex_cond_lock
+0 425 32 2 119 2 0 34 0 0
+fn=__pthread_mutex_unlock_usercnt
+0 32269 173 4 9233 128 0 1088 0 0
+fn=__pthread_once_slow
+0 245 20 5 50 3 1 40 1 0
+fn=__pthread_tunables_init
+0 14 2 2 4 0 0 2 0 0
+fn=__rawmemchr_avx2
+0 3308 31 4 400 10 0 0 0 0
+fn=__read_nocancel
+0 570 66 2 95 0 0 0 0 0
+fn=__register_atfork
+0 43 4 4 10 1 1 11 1 1
+fn=__res_thread_freeres
+0 20 1 1 10 6 3 4 0 0
+fn=__resolv_context_freeres
+0 34 4 2 16 0 0 12 0 0
+fn=__rpc_thread_destroy
+0 24 6 3 10 2 1 4 0 0
+fn=__rtld_malloc_init_real
+0 118 5 5 11 1 1 17 1 0
+fn=__rtld_malloc_init_stubs
+0 10 2 2 1 0 0 4 0 0
+fn=__run_exit_handlers
+0 2954 9 9 830 6 1 108 1 0
+fn=__run_fork_handlers
+0 68 5 5 16 1 0 8 0 0
+fn=__sched_cpualloc
+0 50 1 0 0 0 0 0 0 0
+fn=__sched_cpucount
+0 7 2 2 3 2 0 0 0 0
+fn=__sched_cpufree
+0 20 0 0 0 0 0 0 0 0
+fn=__shm_directory
+0 26 1 1 8 0 0 6 0 0
+fn=__sigjmp_save
+0 23319 0 0 5182 0 0 5182 10 0
+fn=__sigsetjmp
+0 58706 92 5 13310 202 0 21367 28 4
+fn=__snprintf_chk
+0 5146 189 4 664 0 0 1162 19 0
+fn=__sprintf_chk
+0 198 12 4 24 0 0 48 2 0
+fn=__sqrt_finite
+0 48 16 1 16 0 0 0 0 0
+fn=__static_initialization_and_destruction_0(int, int)
+0 19 1 1 5 0 0 5 0 0
+fn=__strcasecmp_avx
+0 408 25 1 204 20 0 0 0 0
+fn=__strcasecmp_l_avx
+0 5515 191 20 1273 205 14 0 0 0
+fn=__strcat_avx2
+0 475 28 11 58 0 0 19 0 0
+fn=__strchr_avx2
+0 5977 77 7 751 47 0 0 0 0
+fn=__strchr_sse2
+0 144 16 5 18 1 0 0 0 0
+fn=__strchrnul_avx2
+0 235937 542 8 22550 435 68 0 0 0
+fn=__strcmp_avx2
+0 240793 345 8 53764 776 276 0 0 0
+fn=__strcpy_avx2
+0 28 6 6 5 0 0 2 0 0
+fn=__strcspn_sse42
+0 12109 30 6 1796 2 1 0 0 0
+fn=__strlen_avx2
+0 779863 482 8 91876 1934 1012 0 0 0
+fn=__strncasecmp_avx
+0 44 3 1 22 1 0 0 0 0
+fn=__strncasecmp_l_avx
+0 702 34 21 142 9 1 0 0 0
+fn=__strncat_avx2
+0 563884 612 15 56242 176 98 19575 0 0
+fn=__strncmp_avx2
+0 739506 565 12 123011 360 47 0 0 0
+fn=__strncpy_avx2
+0 14898 255 26 1289 17 8 1503 2 0
+fn=__strncpy_chk
+0 136 8 1 0 0 0 0 0 0
+fn=__strnlen_avx2
+0 58 6 5 6 0 0 0 0 0
+fn=__strrchr_avx2
+0 5626 33 7 389 2 0 0 0 0
+fn=__strspn_sse42
+0 8808 46 5 1513 13 3 0 0 0
+fn=__strstr_sse2_unaligned
+0 91217 29 5 15902 15 13 0 0 0
+fn=__strtof_internal
+0 4 2 2 2 0 0 0 0 0
+fn=__strtol_internal
+0 480 5 1 240 0 0 0 0 0
+fn=__strtoul_internal
+0 460 6 2 230 0 0 0 0 0
+fn=__trans_list_add
+0 310 2 2 80 2 0 120 0 0
+fn=__trans_list_clear
+0 134 2 2 52 8 8 30 0 0
+fn=__tunable_get_val
+0 925 10 2 188 40 0 47 0 0
+fn=__uflow
+0 7632 27 3 2332 5 0 424 1 0
+fn=__unregister_atfork
+0 2889 65 4 877 96 0 88 0 0
+fn=__vasprintf_internal
+0 294640 477 7 67005 88 0 70110 91 2
+fn=__vfprintf_internal
+0 1316150 3986 90 252992 1212 15 209409 556 16
+fn=__vfscanf_internal
+0 188953 511 145 52124 132 25 30364 67 0
+fn=__vsnprintf_chk
+0 33 5 1 0 0 0 0 0 0
+fn=__vsnprintf_internal
+0 9860 256 5 2248 0 0 2594 147 6
+fn=__vsprintf_internal
+0 392 12 4 77 0 0 97 2 0
+fn=__wait_lookup_done
+0 3370 107 7 940 312 0 300 2 0
+fn=__xmlBufferAllocScheme
+0 7 1 1 2 0 0 1 0 0
+fn=__xmlDefaultBufferSize
+0 7 1 1 2 1 0 1 0 0
+fn=__xmlDefaultSAXHandler
+0 21 2 1 6 0 0 3 0 0
+fn=__xmlDefaultSAXLocator
+0 7 0 0 2 1 0 1 0 0
+fn=__xmlDoValidityCheckingDefaultValue
+0 7 1 1 2 0 0 1 0 0
+fn=__xmlGenericError
+0 21 1 1 6 0 0 3 0 0
+fn=__xmlGenericErrorContext
+0 7 2 2 2 0 0 1 0 0
+fn=__xmlGlobalInitMutexLock
+0 4 2 2 2 1 0 0 0 0
+fn=__xmlGlobalInitMutexUnlock
+0 4 0 0 2 0 0 0 0 0
+fn=__xmlInitializeDict
+0 22 3 3 6 2 1 9 0 0
+fn=__xmlKeepBlanksDefaultValue
+0 7 1 1 2 1 0 1 0 0
+fn=__xmlLineNumbersDefaultValue
+0 7 1 1 2 0 0 1 0 0
+fn=__xmlLoadExtDtdDefaultValue
+0 7 1 1 2 1 0 1 0 0
+fn=__xmlPedanticParserDefaultValue
+0 7 1 1 2 0 0 1 0 0
+fn=__xmlRandom
+0 14 1 1 6 0 0 4 0 0
+fn=__xmlSubstituteEntitiesDefaultValue
+0 7 2 2 2 0 0 1 0 0
+fn=_dl_add_to_namespace_list
+0 16611 96 2 4198 119 1 719 0 0
+fn=_dl_add_to_slotinfo
+0 84 3 3 27 9 0 18 1 0
+fn=_dl_addr
+0 72441 10 10 14490 1108 460 17 1 0
+fn=_dl_allocate_tls
+0 44 4 2 8 2 0 10 0 0
+fn=_dl_allocate_tls_init
+0 537 18 6 153 28 0 75 1 1
+fn=_dl_allocate_tls_storage
+0 353 4 4 9 0 0 321 41 41
+fn=_dl_cache_libcmp
+0 16364 11 3 2534 178 146 0 0 0
+fn=_dl_call_libc_early_init
+0 24 3 3 5 0 0 3 0 0
+fn=_dl_catch_error
+0 5678 165 4 1957 50 0 1567 91 0
+fn=_dl_catch_exception
+0 120343 90 7 35562 732 0 38370 398 4
+fn=_dl_cet_check
+0 2 1 1 0 0 0 0 0 0
+fn=_dl_cet_open_check
+0 189 63 0 0 0 0 0 0 0
+fn=_dl_check_all_versions
+0 254 2 2 41 4 0 22 1 0
+fn=_dl_check_map_versions
+0 89794 945 20 29268 1346 364 8405 288 118
+fn=_dl_close
+0 1040 38 2 325 49 0 195 3 0
+fn=_dl_close_worker
+0 487230 718 52 132430 17813 36 24311 2240 0
+fn=_dl_count_modids
+0 6 1 1 3 0 0 0 0 0
+fn=_dl_debug_initialize
+0 3150 73 3 1048 233 0 4 1 1
+fn=_dl_debug_state
+0 508 38 1 254 0 0 0 0 0
+fn=_dl_determine_tlsoffset
+0 138 6 6 27 4 1 13 0 0
+fn=_dl_discover_osversion
+0 85 4 4 12 1 1 4 1 1
+fn=_dl_dst_count
+0 44424 65 1 14808 0 0 14808 65 2
+fn=_dl_find_dso_for_object
+0 8942 93 3 3709 1269 3 264 8 0
+fn=_dl_fini
+0 1059 11 11 362 137 33 115 22 0
+fn=_dl_fixup
+0 1989 30 7 703 128 48 156 0 0
+fn=_dl_get_tls_static_info
+0 6 0 0 3 0 0 2 1 0
+fn=_dl_higher_prime_number
+0 159 1 1 14 2 1 0 0 0
+fn=_dl_important_hwcaps
+0 575 19 19 90 0 0 78 3 3
+fn=_dl_init
+0 12427 260 6 4482 175 0 476 0 0
+fn=_dl_init_paths
+0 81 8 8 19 0 0 25 2 2
+fn=_dl_load_cache_lookup
+0 5600 56 15 994 170 125 604 10 0
+fn=_dl_lookup_direct
+0 64 4 4 16 2 0 9 0 0
+fn=_dl_lookup_symbol_x
+0 4379566 648 25 821797 16800 6756 330720 218 5
+fn=_dl_map_object
+0 876680 507 27 210720 17145 0 99324 446 7
+fn=_dl_map_object_deps
+0 287248 1709 35 58743 5278 9 22230 184 65
+fn=_dl_map_object_from_fd
+0 131245 2500 63 35679 6819 741 10556 398 147
+fn=_dl_mcount_wrapper_check
+0 768 2 2 384 1 0 0 0 0
+fn=_dl_name_match_p
+0 908525 89 2 226496 8969 0 130808 418 2
+fn=_dl_new_object
+0 18860 707 15 3996 28 19 3322 236 105
+fn=_dl_next_ld_env_entry
+0 404 2 2 141 0 0 1 0 0
+fn=_dl_next_tls_modid
+0 21 1 1 9 0 0 3 0 0
+fn=_dl_open
+0 4225 148 5 975 124 0 1300 6 0
+fn=_dl_process_pt_gnu_property
+0 160 2 2 64 8 8 0 0 0
+fn=_dl_protect_relro
+0 1820 128 2 546 18 0 182 0 0
+fn=_dl_receive_error
+0 17 1 1 5 1 0 7 0 0
+fn=_dl_relocate_object
+0 1825924 1738 63 457576 29528 18956 166745 8157 5771
+fn=_dl_runtime_resolve_xsave
+0 943 24 8 1104 3 1 1150 10 0
+fn=_dl_scope_free
+0 49 6 4 12 4 0 10 1 0
+fn=_dl_setup_hash
+0 2184 56 2 637 92 78 546 1 1
+fn=_dl_sort_maps
+0 296671 738 13 76111 1758 0 19394 123 0
+fn=_dl_start
+0 982 21 19 242 34 32 89 42 42
+fn=_dl_sym
+0 260 47 2 0 0 0 0 0 0
+fn=_dl_sysdep_read_whole_file
+0 172 12 3 24 2 0 36 2 0
+fn=_dl_sysdep_start
+0 665 36 35 157 21 19 83 5 5
+fn=_dl_sysdep_start_cleanup
+0 2 1 1 1 0 0 0 0 0
+fn=_dl_tls_static_surplus_init
+0 36 2 2 6 0 0 7 1 0
+fn=_dl_unload_cache
+0 416 107 2 136 63 0 8 0 0
+fn=_dl_unmap
+0 1168 33 2 511 85 3 292 0 0
+fn=_fxstat
+0 1298 61 3 118 0 0 0 0 0
+fn=_init_first
+0 21 3 3 7 3 0 5 3 2
+fn=_int_free
+0 1760687 1115 24 505613 5000 913 230111 105 4
+fn=_int_malloc
+0 1796220 3039 58 304879 2865 4 322104 8376 6652
+fn=_int_memalign
+0 156 8 8 21 0 0 22 3 3
+fn=_int_realloc
+0 62704 624 10 12304 71 0 9077 12 5
+fn=_itoa_word
+0 6902 187 3 520 53 1 331 0 0
+fn=_mid_memalign
+0 133 10 10 35 0 0 11 0 0
+fn=_pthread_cleanup_pop
+0 144 2 0 48 4 0 24 4 0
+fn=_pthread_cleanup_pop_restore
+0 2410 25 1 964 0 0 241 0 0
+fn=_pthread_cleanup_push
+0 168 31 2 48 2 0 96 0 0
+fn=_pthread_cleanup_push_defer
+0 4097 57 2 964 36 0 1205 4 0
+fn=_setjmp
+0 9 3 1 0 0 0 0 0 0
+fn=_start
+0 12 2 2 2 1 0 3 0 0
+fn=_xstat
+0 2292 59 2 209 1 0 11 1 0
+fn=access
+0 57 9 3 10 0 0 4 0 0
+fn=add_to_global_resize
+0 9189 281 6 2253 77 0 380 0 0
+fn=add_to_global_update
+0 10069 210 4 4055 21 0 620 19 3
+fn=alloc_perturb
+0 40340 57 1 20170 1 0 0 0 0
+fn=allocate
+0 3 0 0 0 0 0 0 0 0
+fn=arena_get2.part.0
+0 1488 32 16 58 2 0 540 69 69
+fn=bcmp
+0 375 39 7 100 35 0 0 0 0
+fn=bind
+0 6 1 1 1 0 0 0 0 0
+fn=brk
+0 153 22 4 27 0 0 14 1 1
+fn=btowc
+0 9856 4 4 3072 5 0 1408 0 0
+fn=call_destructors
+0 2609 27 2 925 336 50 349 27 0
+fn=call_dl_init
+0 378 56 1 252 0 0 0 0 0
+fn=call_init.part.0
+0 5475 144 3 1795 473 0 813 0 0
+fn=calloc
+0 590248 468 12 128701 492 0 51566 134 30
+fn=check_match
+0 738459 318 7 220517 14142 1633 80527 89 2
+fn=check_stdfiles_vtables
+0 12 2 2 7 4 0 0 0 0
+fn=clock_gettime@@GLIBC_2.17
+0 70749 85 2 16845 65 0 6738 9 2
+fn=clock_nanosleep@@GLIBC_2.17
+0 245 12 3 49 2 0 49 2 0
+fn=clone
+0 52 5 2 8 2 0 6 2 2
+fn=close
+0 435 20 2 92 0 0 84 0 0
+fn=closedir
+0 90 4 1 20 0 0 20 0 0
+fn=closelog
+0 23 4 4 7 2 0 2 1 0
+fn=connect
+0 23 2 2 6 0 0 6 0 0
+fn=cos
+0 9 2 2 4 0 0 0 0 0
+fn=cosf
+0 9 2 2 4 1 0 0 0 0
+fn=create_thread
+0 102 12 6 24 0 0 18 0 0
+fn=decode_name
+0 40746 1 1 8976 0 0 4370 0 0
+fn=decompose_rpath
+0 1092 25 5 180 10 5 72 5 0
+fn=dirfd
+0 18 1 0 12 0 0 0 0 0
+fn=dl_cet_check
+0 1856 192 4 576 3 0 384 0 0
+fn=dl_main
+0 1894 82 81 501 117 28 173 24 19
+fn=dl_open_worker
+0 66431 1391 32 24479 2752 0 2017 74 0
+fn=dlclose
+0 910 35 1 195 107 0 65 0 0
+fn=dlopen
+0 1430 147 2 520 59 0 325 0 0
+fn=dlsym
+0 2145 187 3 845 117 0 585 0 0
+fn=do_lookup_x
+0 11257298 895 33 3755903 268175 2754 1474239 838 38
+fn=do_preload
+0 28 3 3 7 0 0 8 0 0
+fn=do_sym
+0 4160 148 5 1365 114 0 715 2 0
+fn=elision_init
+0 37 4 4 6 1 1 8 0 0
+fn=endmntent
+0 8 1 1 1 0 0 1 0 0
+fn=epoll_create
+0 6 1 1 1 0 0 0 0 0
+fn=epoll_ctl
+0 182 14 1 26 0 0 0 0 0
+fn=epoll_wait
+0 1170 37 2 315 11 0 315 11 0
+fn=eventfd
+0 18 3 1 3 0 0 0 0 0
+fn=exit
+0 6 1 1 0 0 0 1 0 0
+fn=exp2f
+0 9 1 1 4 0 0 0 0 0
+fn=expand_dynamic_string_token
+0 1260 128 2 350 0 0 420 22 1
+fn=expf
+0 9 2 2 4 0 0 0 0 0
+fn=fclose@@GLIBC_2.2.5
+0 606 45 8 201 9 0 70 0 0
+fn=fcntl
+0 882 15 3 168 0 0 252 0 0
+fn=fcntl@GLIBC_2.2.5
+0 756 10 2 168 0 0 252 0 0
+fn=ferror
+0 112 7 4 38 0 0 8 0 0
+fn=fflush
+0 342 5 5 114 7 2 36 0 0
+fn=fgets
+0 13092 10 5 3638 0 0 2000 0 0
+fn=fgets_unlocked
+0 2334 3 3 419 0 0 419 0 0
+fn=fileno
+0 63 3 1 27 2 1 0 0 0
+fn=fillin_rpath.isra.0
+0 546 34 10 115 10 0 147 0 0
+fn=floor
+0 7 1 1 3 2 0 0 0 0
+fn=fopen@@GLIBC_2.2.5
+0 36 6 1 0 0 0 0 0 0
+fn=fork
+0 36 4 4 6 0 0 5 0 0
+fn=fork@GLIBC_2.2.5
+0 2 1 1 0 0 0 0 0 0
+fn=fprintf
+0 528 64 4 64 0 0 288 8 0
+fn=fread
+0 520 9 5 164 0 0 80 0 0
+fn=free
+0 458261 323 5 109718 5119 857 110 0 0
+fn=freelocale
+0 10 3 2 2 0 0 0 0 0
+fn=gaih_inet.constprop.0
+0 174 15 15 45 4 4 41 1 0
+fn=get_common_cache_info
+0 222 10 10 21 0 0 15 0 0
+fn=get_common_indices.constprop.0
+0 55 4 4 5 0 0 21 3 3
+fn=get_free_list
+0 22 4 2 10 0 0 6 0 0
+fn=get_mnt_entry
+0 7643 11 9 894 0 0 1777 0 0
+fn=getaddrinfo
+0 84 9 9 19 0 0 19 4 0
+fn=getcwd
+0 92 14 7 22 2 2 14 0 0
+fn=getegid
+0 36 0 0 9 0 0 0 0 0
+fn=getenv
+0 1809536 302 4 564617 3287 47 45072 4 0
+fn=geteuid
+0 40 6 1 10 0 0 0 0 0
+fn=getgid
+0 28 0 0 7 0 0 0 0 0
+fn=gethostname
+0 441 29 4 90 0 0 81 2 1
+fn=getmntent
+0 668 2 2 120 1 1 61 0 0
+fn=getmntent_r
+0 2045 3 3 549 1 1 361 0 0
+fn=getpagesize
+0 78 19 2 39 6 0 0 0 0
+fn=getpid
+0 56 7 1 14 0 0 0 0 0
+fn=getrlimit
+0 10 1 1 1 0 0 0 0 0
+fn=getsockname
+0 6 1 1 1 0 0 0 0 0
+fn=getsockopt
+0 7 1 1 1 0 0 0 0 0
+fn=gettimeofday
+0 21 4 2 9 3 0 0 0 0
+fn=getuid
+0 36 4 0 9 0 0 0 0 0
+fn=hack_digit
+0 5621 48 3 1700 0 0 850 0 0
+fn=handle_intel.constprop.0
+0 162 5 5 36 0 0 42 0 0
+fn=handle_preload_list
+0 53 4 4 12 0 0 10 1 1
+fn=hasmntopt
+0 27 2 2 6 0 0 6 0 0
+fn=htmlDefaultSAXHandlerInit
+0 51 6 6 3 1 0 29 3 0
+fn=htmlInitAutoClose
+0 4 1 1 1 1 1 0 0 0
+fn=hwloc__xml_verbose
+0 13 2 2 4 1 0 2 0 0
+fn=hwloc_alloc_setup_object
+0 1743 12 6 210 1 0 966 61 42
+fn=hwloc_backend_alloc
+0 31 3 3 7 0 0 14 0 0
+fn=hwloc_backend_enable
+0 27 3 3 13 2 0 5 0 0
+fn=hwloc_bitmap_alloc
+0 1170 3 1 260 0 0 455 8 6
+fn=hwloc_bitmap_alloc_full
+0 18 2 2 6 0 0 6 0 0
+fn=hwloc_bitmap_and
+0 4788 6 6 1428 43 0 1008 0 0
+fn=hwloc_bitmap_clr_range
+0 42 5 4 9 0 0 6 0 0
+fn=hwloc_bitmap_compare
+0 30 4 4 9 2 0 0 0 0
+fn=hwloc_bitmap_compare_first
+0 135 3 3 36 2 0 15 0 0
+fn=hwloc_bitmap_copy
+0 392 2 2 154 1 0 112 0 0
+fn=hwloc_bitmap_dup
+0 3 0 0 0 0 0 0 0 0
+fn=hwloc_bitmap_fill
+0 18 1 1 3 0 0 5 0 0
+fn=hwloc_bitmap_first
+0 30 2 2 8 0 0 0 0 0
+fn=hwloc_bitmap_free
+0 669 3 1 288 21 3 130 0 0
+fn=hwloc_bitmap_isset
+0 90 2 2 36 0 0 0 0 0
+fn=hwloc_bitmap_iszero
+0 140 1 1 50 6 0 0 0 0
+fn=hwloc_bitmap_last
+0 429 4 4 65 1 0 0 0 0
+fn=hwloc_bitmap_list_asprintf
+0 23 2 2 6 0 0 6 0 0
+fn=hwloc_bitmap_list_snprintf
+0 144 5 5 28 2 0 25 0 0
+fn=hwloc_bitmap_next
+0 136 3 3 18 0 0 0 0 0
+fn=hwloc_bitmap_next_unset
+0 68 3 3 8 0 0 0 0 0
+fn=hwloc_bitmap_or
+0 2880 6 5 864 22 0 576 0 0
+fn=hwloc_bitmap_set
+0 1196 6 3 322 7 0 184 0 0
+fn=hwloc_bitmap_sscanf
+0 5220 7 7 1334 1 1 870 0 0
+fn=hwloc_bitmap_zero
+0 234 3 2 39 0 0 65 2 0
+fn=hwloc_compare_types
+0 432 1 1 72 1 1 0 0 0
+fn=hwloc_get_cpubind
+0 36 1 1 6 1 0 3 0 0
+fn=hwloc_get_obj_by_depth
+0 70 6 5 39 5 1 0 0 0
+fn=hwloc_get_type_depth
+0 15 1 1 6 0 0 0 0 0
+fn=hwloc_insert_object_by_parent
+0 789 8 8 236 10 2 195 1 0
+fn=hwloc_linux_get_tid_cpubind
+0 1168 15 15 339 14 1 224 1 0
+fn=hwloc_obj_add_info
+0 294 1 1 0 0 0 0 0 0
+fn=hwloc_obj_type_is_memory
+0 91 1 1 13 0 0 0 0 0
+fn=hwloc_topology_destroy
+0 23 3 3 13 2 1 10 0 0
+fn=hwloc_topology_get_support
+0 2 1 1 1 0 0 0 0 0
+fn=hwloc_topology_get_type_filter
+0 154 0 0 44 2 0 22 0 0
+fn=hwloc_topology_init
+0 3 1 1 0 0 0 0 0 0
+fn=hwloc_topology_load
+0 255 25 24 112 22 0 54 0 0
+fn=hwloc_topology_reconnect
+0 1608 21 21 429 4 0 295 2 0
+fn=hwloc_topology_set_flags
+0 9 1 1 2 0 0 1 1 0
+fn=hwloc_topology_set_io_types_filter
+0 21 2 2 6 1 0 5 0 0
+fn=hwloc_topology_set_type_filter
+0 24 2 2 3 1 0 0 0 0
+fn=hwloc_topology_set_xmlbuffer
+0 9 1 1 1 0 0 0 0 0
+fn=hwloc_type_sscanf
+0 4367 27 27 796 12 1 450 4 0
+fn=hwloc_xml_callbacks_register
+0 17 2 2 9 2 0 3 0 0
+fn=hwloc_xml_callbacks_reset
+0 3 2 1 1 0 0 2 1 1
+fn=index
+0 77743 251 10 9774 855 171 0 0 0
+fn=inet_addr
+0 16 2 2 5 0 0 2 0 0
+fn=inet_aton_end
+0 166 10 6 42 2 1 34 1 0
+fn=inet_ntoa
+0 48 2 2 10 0 0 6 0 0
+fn=inet_ntop
+0 44 4 4 16 0 0 11 0 0
+fn=inet_pton
+0 38 4 2 6 0 0 8 0 0
+fn=inet_pton4
+0 192 4 3 20 0 0 12 0 0
+fn=inet_pton6
+0 53 7 7 10 0 0 6 0 0
+fn=initGenericErrorDefaultFunc
+0 8 2 2 3 0 0 3 0 0
+fn=init_cacheinfo
+0 101 9 9 22 4 0 25 3 3
+fn=init_tls
+0 173 5 5 46 21 1 17 1 1
+fn=inputPop
+0 35 4 2 8 0 0 3 0 0
+fn=inputPush
+0 23 2 2 6 0 0 5 0 0
+fn=intel_check_word.constprop.0
+0 1354 9 9 123 6 6 18 0 0
+fn=ioctl
+0 178 4 1 30 0 0 1 0 0
+fn=isatty
+0 120 2 1 32 0 0 16 0 0
+fn=listen
+0 6 1 1 1 0 0 0 0 0
+fn=log2f
+0 9 2 2 4 0 0 0 0 0
+fn=logf
+0 9 2 2 4 0 0 0 0 0
+fn=lookup_malloc_symbol
+0 184 4 4 64 1 0 40 0 0
+fn=lseek
+0 48 5 1 8 0 0 0 0 0
+fn=madvise
+0 12 2 1 2 0 0 0 0 0
+fn=main
+0 4827701 315 24 2035519 7646 1 237421 8421 5027
+fn=malloc
+0 765595 385 13 210210 1685 1 80304 33 0
+fn=malloc_consolidate
+0 488829 383 7 103747 12850 31 91221 179 3
+fn=malloc_hook_ini
+0 12 1 1 3 1 1 3 0 0
+fn=map_doit
+0 15 2 2 5 0 0 3 0 0
+fn=maybe_split_for_insert.isra.0
+0 2661 29 6 670 5 0 122 0 0
+fn=mca_allocator_basic_component_close
+0 2 1 1 1 0 0 0 0 0
+fn=mca_allocator_basic_component_open
+0 2 1 0 1 0 0 0 0 0
+fn=mca_allocator_bucket_cleanup
+0 412 3 3 158 32 0 6 0 0
+fn=mca_allocator_bucket_finalize
+0 623 3 1 190 9 0 37 0 0
+fn=mca_allocator_bucket_init
+0 999 6 0 372 2 0 164 37 37
+fn=mca_allocator_bucket_module_close
+0 2 1 0 1 0 0 0 0 0
+fn=mca_allocator_bucket_module_init
+0 38 3 0 13 3 0 12 0 0
+fn=mca_allocator_bucket_module_open
+0 2 1 0 1 0 0 0 0 0
+fn=mca_allocator_component_lookup
+0 59 4 2 21 6 0 11 0 0
+fn=mca_base_close
+0 28 3 3 13 5 0 6 0 0
+fn=mca_base_component_close
+0 980 25 1 246 108 16 174 0 0
+fn=mca_base_component_find
+0 3275 274 16 1075 212 10 602 0 0
+fn=mca_base_component_find_finalize
+0 2 1 0 1 0 0 0 0 0
+fn=mca_base_component_parse_requested
+0 603 50 3 175 14 0 206 0 0
+fn=mca_base_component_pvar_register
+0 120 6 2 45 0 0 50 0 0
+fn=mca_base_component_repository_add
+0 122 7 5 32 4 1 14 0 0
+fn=mca_base_component_repository_finalize
+0 5637 10 9 2131 123 67 860 56 29
+fn=mca_base_component_repository_get_components
+0 432 18 1 135 1 0 108 0 0
+fn=mca_base_component_repository_init
+0 55 5 5 20 7 0 12 1 0
+fn=mca_base_component_repository_open
+0 8529 709 20 2823 689 26 2141 38 1
+fn=mca_base_component_repository_release
+0 1039 25 2 270 90 7 229 26 0
+fn=mca_base_component_to_string
+0 27 3 2 9 0 0 4 0 0
+fn=mca_base_component_unload
+0 1147 38 2 282 76 0 229 0 0
+fn=mca_base_component_var_register
+0 8514 24 1 2322 17 0 2709 1 1
+fn=mca_base_components_close
+0 3069 64 4 1254 244 29 609 45 1
+fn=mca_base_components_filter
+0 1083 110 10 412 1 1 345 0 0
+fn=mca_base_framework_close
+0 2157 40 6 679 122 5 359 0 0
+fn=mca_base_framework_components_close
+0 120 7 0 60 36 7 0 0 0
+fn=mca_base_framework_components_open
+0 2274 101 8 703 66 1 412 2 0
+fn=mca_base_framework_components_register
+0 4702 141 10 951 175 1 1245 2 0
+fn=mca_base_framework_is_open
+0 248 20 0 124 30 18 0 0 0
+fn=mca_base_framework_is_registered
+0 248 13 1 124 0 0 0 0 0
+fn=mca_base_framework_open
+0 1236 67 4 393 105 0 266 0 0
+fn=mca_base_framework_register
+0 4367 205 10 1410 194 10 1075 18 17
+fn=mca_base_framework_var_register
+0 651 33 1 248 0 0 217 0 0
+fn=mca_base_internal_env_store
+0 4 0 0 2 1 0 0 0 0
+fn=mca_base_open
+0 248 24 21 56 6 0 78 1 0
+fn=mca_base_parse_paramfile
+0 16 1 1 4 1 0 8 0 0
+fn=mca_base_pvar_finalize
+0 727 5 5 275 32 1 68 0 0
+fn=mca_base_pvar_find
+0 520 6 2 220 3 0 100 0 0
+fn=mca_base_pvar_find_by_name
+0 520 9 3 180 0 0 120 0 0
+fn=mca_base_pvar_get
+0 460 10 2 200 34 0 60 0 0
+fn=mca_base_pvar_init
+0 60 5 5 20 1 0 12 2 0
+fn=mca_base_pvar_mark_invalid
+0 500 8 2 200 0 0 60 0 0
+fn=mca_base_pvar_register
+0 3364 46 15 1169 15 1 804 0 0
+fn=mca_base_select
+0 937 63 9 297 21 0 201 2 0
+fn=mca_base_var_cache_files
+0 239 21 21 47 12 0 76 0 0
+fn=mca_base_var_check_exclusive
+0 54 5 5 14 1 0 11 0 0
+fn=mca_base_var_deregister
+0 17401 81 6 4959 647 107 3426 97 20
+fn=mca_base_var_enum_create
+0 3088 35 5 1023 30 2 622 1 1
+fn=mca_base_var_enum_create_flag
+0 877 12 6 358 19 14 188 1 1
+fn=mca_base_var_enum_register
+0 26 2 2 8 0 0 6 0 0
+fn=mca_base_var_finalize
+0 21134 11 11 7685 716 235 1926 2 0
+fn=mca_base_var_find
+0 234 8 4 90 3 0 45 0 0
+fn=mca_base_var_generate_full_name4
+0 388194 130 4 80133 137 0 73690 16 0
+fn=mca_base_var_get
+0 5712 12 1 1904 0 0 952 0 0
+fn=mca_base_var_get_value
+0 68 6 3 20 2 0 12 0 0
+fn=mca_base_var_group_add_enum
+0 97 4 3 35 0 0 14 0 0
+fn=mca_base_var_group_add_pvar
+0 1175 9 3 393 0 0 140 0 0
+fn=mca_base_var_group_add_var
+0 82303 268 4 18941 54 0 4445 0 0
+fn=mca_base_var_group_component_register
+0 10 1 0 0 0 0 0 0 0
+fn=mca_base_var_group_deregister
+0 12882 92 8 5411 553 179 2113 0 0
+fn=mca_base_var_group_finalize
+0 6016 6 6 2219 174 34 405 1 0
+fn=mca_base_var_group_find
+0 492 7 1 0 0 0 0 0 0
+fn=mca_base_var_group_get_internal
+0 55277 76 3 19481 321 48 6977 0 0
+fn=mca_base_var_group_init
+0 61 5 5 20 11 0 13 2 0
+fn=mca_base_var_group_register
+0 686 28 1 0 0 0 0 0 0
+fn=mca_base_var_group_set_var_flag
+0 1387 66 3 457 40 0 245 0 0
+fn=mca_base_var_init
+0 131 10 10 43 8 0 28 6 0
+fn=mca_base_var_register
+0 9180 10 1 4284 0 0 4896 0 0
+fn=mca_base_var_register_synonym
+0 1536 29 3 432 7 0 384 0 0
+fn=mca_base_var_set_flag
+0 1085 44 2 280 0 0 175 0 0
+fn=mca_bml_base_btl_array_reserve
+0 102 3 3 30 1 0 27 0 0
+fn=mca_bml_base_init
+0 139 10 6 74 17 0 63 7 6
+fn=mca_bml_r2_component_close
+0 2 1 0 1 0 0 0 0 0
+fn=mca_bml_r2_component_init
+0 13 3 1 4 2 0 4 2 0
+fn=mca_bml_r2_component_open
+0 2 0 0 1 0 0 0 0 0
+fn=mca_bml_r2_finalize
+0 108 8 8 44 12 0 20 1 0
+fn=mca_btl_base_param_register
+0 640 14 14 82 14 0 226 0 0
+fn=mca_btl_base_param_verify
+0 69 3 3 36 3 0 3 0 0
+fn=mca_btl_base_select
+0 322 24 16 125 27 1 57 1 0
+fn=mca_btl_tcp_add_procs
+0 41 4 4 12 1 0 13 0 0
+fn=mca_btl_tcp_component_init
+0 403 31 31 104 19 0 94 3 0
+fn=mca_btl_tcp_finalize
+0 18 3 3 7 2 0 5 0 0
+fn=mca_btl_tcp_set_socket_options
+0 35 3 3 12 1 0 6 0 0
+fn=mca_coll_base_comm_select
+0 58582 3187 169 22181 526 0 8261 2 0
+fn=mca_coll_base_comm_unselect
+0 28400 2414 141 12800 346 0 4320 0 0
+fn=mca_coll_base_find_available
+0 305 7 7 116 38 1 39 1 0
+fn=mca_coll_basic_comm_query
+0 1962 171 8 921 242 0 681 0 0
+fn=mca_coll_basic_init_query
+0 2 1 1 1 0 0 0 0 0
+fn=mca_coll_basic_module_enable
+0 682 36 2 261 13 1 161 0 0
+fn=mca_coll_inter_comm_query
+0 80 38 1 40 0 0 0 0 0
+fn=mca_coll_inter_init_query
+0 2 1 1 1 0 0 0 0 0
+fn=mca_coll_self_allgather_intra
+0 54 18 0 18 0 0 0 0 0
+fn=mca_coll_self_allreduce_intra
+0 4 2 2 1 0 0 0 0 0
+fn=mca_coll_self_barrier_intra
+0 32 16 1 16 0 0 0 0 0
+fn=mca_coll_self_comm_query
+0 1563 135 4 721 113 0 521 0 0
+fn=mca_coll_self_init_query
+0 2 1 1 1 0 0 0 0 0
+fn=mca_coll_self_module_enable
+0 40 19 1 20 0 0 0 0 0
+fn=mca_coll_sm_comm_query
+0 460 38 2 220 39 0 80 0 0
+fn=mca_coll_sm_init_query
+0 13 1 1 6 4 0 1 0 0
+fn=mca_coll_sync_comm_query
+0 320 38 0 160 39 0 80 0 0
+fn=mca_coll_sync_init_query
+0 2 1 0 1 0 0 0 0 0
+fn=mca_common_monitoring_finalize
+0 11 0 0 6 0 0 3 0 0
+fn=mca_common_monitoring_init
+0 40 4 4 18 4 0 8 0 0
+fn=mca_common_monitoring_register
+0 325 23 23 32 7 0 175 1 0
+fn=mca_mpool_base_alloc
+0 1221 34 2 297 46 1 396 44 6
+fn=mca_mpool_base_free
+0 858 16 1 297 77 1 198 0 0
+fn=mca_mpool_base_module_lookup
+0 1485 51 3 660 135 0 297 0 0
+fn=mca_mpool_base_tree_delete
+0 594 16 1 297 33 0 99 0 0
+fn=mca_mpool_base_tree_find
+0 594 32 2 297 37 0 99 0 0
+fn=mca_mpool_base_tree_fini
+0 47 3 2 17 7 0 5 0 0
+fn=mca_mpool_base_tree_init
+0 95 7 7 33 3 1 24 3 3
+fn=mca_mpool_base_tree_insert
+0 594 16 1 297 17 0 99 0 0
+fn=mca_mpool_base_tree_item_get
+0 829 53 5 366 65 0 198 0 0
+fn=mca_mpool_base_tree_item_put
+0 429 32 1 198 25 0 99 0 0
+fn=mca_mpool_base_tree_node_compare
+0 906 64 2 151 0 0 0 0 0
+fn=mca_pml_base_bsend_detach
+0 21 6 6 8 1 0 4 0 0
+fn=mca_pml_base_bsend_fini
+0 47 4 4 16 8 0 6 0 0
+fn=mca_pml_base_bsend_init
+0 120 5 5 25 10 1 15 2 2
+fn=mca_pml_base_finalize
+0 5 1 1 2 1 0 0 0 0
+fn=mca_pml_base_pml_check_selected
+0 32 6 6 14 4 0 8 0 0
+fn=mca_pml_base_select
+0 595 25 25 246 35 0 118 7 5
+fn=mca_pml_ob1_add_comm
+0 1242 114 6 521 167 0 281 2 0
+fn=mca_pml_ob1_add_procs
+0 155 9 9 50 9 0 21 0 0
+fn=mca_pml_ob1_comm_init_size
+0 340 38 2 80 0 0 100 0 0
+fn=mca_pml_ob1_del_comm
+0 740 51 3 320 58 0 140 0 0
+fn=mca_pml_ob1_del_procs
+0 6 1 0 2 2 0 0 0 0
+fn=mca_pml_ob1_enable
+0 360 22 22 115 19 0 99 2 1
+fn=mca_vprotocol_base_set_include_list
+0 9 1 1 4 2 0 2 1 1
+fn=memalign_hook_ini
+0 18 1 1 5 1 0 3 0 0
+fn=memchr
+0 72 2 2 24 4 0 0 0 0
+fn=memcpy
+0 15236 208 8 4165 52 24 3162 210 139
+fn=memcpy@@GLIBC_2.14
+0 648 53 3 144 63 0 0 0 0
+fn=memmove
+0 270 12 2 60 33 0 0 0 0
+fn=mempcpy
+0 784 5 3 16 7 0 0 0 0
+fn=memrchr
+0 12 2 2 4 0 0 0 0 0
+fn=memset
+0 80333 292 6 4010 46 0 20796 775 702
+fn=mkdir
+0 48 2 2 9 0 0 3 0 0
+fn=mmap
+0 7760 128 4 1164 0 0 776 8 2
+fn=mprotect
+0 690 60 2 115 0 0 0 0 0
+fn=msort_with_tmp.part.0
+0 8424 267 9 2444 0 0 1608 57 0
+fn=munmap
+0 546 40 2 91 0 0 0 0 0
+fn=munmap_chunk
+0 160 12 3 55 6 0 0 0 0
+fn=namePop
+0 1552 2 2 369 0 0 222 0 0
+fn=nanosleep
+0 77 4 1 7 0 0 7 0 0
+fn=new_do_write
+0 896 80 5 256 11 0 208 0 0
+fn=new_heap
+0 117 13 7 16 1 0 20 4 4
+fn=newlocale
+0 140 14 12 36 1 1 21 1 0
+fn=nl_cache_mngt_register
+0 452 4 4 172 39 0 120 0 0
+fn=nl_cache_mngt_unregister
+0 432 4 4 156 27 16 96 0 0
+fn=nodePop
+0 1552 3 2 369 1 0 222 0 0
+fn=nodePush
+0 1850 2 2 592 0 0 370 0 0
+fn=ompi_attr_create_keyval
+0 180 1 1 72 0 0 48 0 0
+fn=ompi_attr_create_predefined
+0 231 16 16 61 11 0 43 0 0
+fn=ompi_attr_delete_all
+0 3429 136 8 911 67 0 584 12 0
+fn=ompi_attr_finalize
+0 74 6 5 32 5 0 13 0 0
+fn=ompi_attr_free_keyval
+0 828 5 5 324 11 0 144 0 0
+fn=ompi_attr_free_predefined
+0 95 8 8 17 1 0 26 0 0
+fn=ompi_attr_init
+0 91 7 7 33 4 0 22 2 2
+fn=ompi_attr_set_aint
+0 1024 80 5 320 0 0 240 0 0
+fn=ompi_attr_set_c
+0 1024 80 5 320 22 0 240 0 0
+fn=ompi_attr_set_fint
+0 464 5 5 148 1 0 113 0 0
+fn=ompi_attr_set_int
+0 3168 80 5 1008 0 0 768 0 0
+fn=ompi_coll_libnbc_iallreduce
+0 918 54 2 324 18 0 324 0 0
+fn=ompi_coll_tuned_allgather_intra_check_forced_init
+0 148 8 8 35 2 0 41 0 0
+fn=ompi_coll_tuned_allgatherv_intra_check_forced_init
+0 145 9 9 34 2 0 41 0 0
+fn=ompi_coll_tuned_allreduce_intra_check_forced_init
+0 149 9 9 35 5 0 41 2 0
+fn=ompi_coll_tuned_alltoall_intra_check_forced_init
+0 188 11 11 41 4 0 57 2 0
+fn=ompi_coll_tuned_alltoallv_intra_check_forced_init
+0 73 6 6 23 2 0 19 0 0
+fn=ompi_coll_tuned_barrier_intra_check_forced_init
+0 98 6 6 28 2 0 19 0 0
+fn=ompi_coll_tuned_bcast_intra_check_forced_init
+0 175 10 10 39 5 0 47 3 0
+fn=ompi_coll_tuned_comm_query
+0 320 38 2 140 0 0 80 0 0
+fn=ompi_coll_tuned_exscan_intra_check_forced_init
+0 73 6 5 23 1 0 19 0 0
+fn=ompi_coll_tuned_gather_intra_check_forced_init
+0 136 10 9 32 2 0 41 2 0
+fn=ompi_coll_tuned_init_query
+0 2 1 1 1 0 0 0 0 0
+fn=ompi_coll_tuned_reduce_intra_check_forced_init
+0 173 10 10 38 1 0 48 2 0
+fn=ompi_coll_tuned_reduce_scatter_block_intra_check_forced_init
+0 124 8 8 30 2 0 34 1 0
+fn=ompi_coll_tuned_reduce_scatter_intra_check_forced_init
+0 141 8 8 33 2 0 41 0 0
+fn=ompi_coll_tuned_scan_intra_check_forced_init
+0 73 6 6 23 1 0 19 0 0
+fn=ompi_coll_tuned_scatter_intra_check_forced_init
+0 124 9 9 30 1 0 41 0 0
+fn=ompi_comm_activate
+0 864 92 5 396 2 0 198 0 0
+fn=ompi_comm_activate_nb
+0 1278 90 5 486 17 0 324 0 0
+fn=ompi_comm_assert_subscribe
+0 400 38 2 40 18 0 0 0 0
+fn=ompi_comm_cid_init
+0 2 1 1 1 0 0 0 0 0
+fn=ompi_comm_dup
+0 48 16 1 16 0 0 0 0 0
+fn=ompi_comm_dup_with_info
+0 2064 144 8 688 51 0 480 11 0
+fn=ompi_comm_finalize
+0 327 13 13 118 13 0 22 0 0
+fn=ompi_comm_free
+0 2178 160 10 846 159 0 342 2 0
+fn=ompi_comm_init
+0 619 47 46 222 31 3 151 6 6
+fn=ompi_comm_nextcid
+0 972 90 5 468 36 0 234 0 0
+fn=ompi_comm_nextcid_nb
+0 648 36 2 216 45 0 198 0 0
+fn=ompi_comm_request_fini
+0 57 5 3 21 4 0 8 0 0
+fn=ompi_comm_request_get
+0 1049 74 6 327 27 0 360 25 0
+fn=ompi_comm_request_init
+0 88 6 6 28 6 0 24 3 3
+fn=ompi_comm_request_return
+0 1980 210 5 756 4 0 432 0 0
+fn=ompi_comm_request_schedule_append
+0 4538 89 5 1423 51 1 1279 0 0
+fn=ompi_comm_request_start
+0 1044 36 2 360 18 0 396 0 0
+fn=ompi_comm_set
+0 522 36 2 234 0 0 180 0 0
+fn=ompi_comm_set_nb
+0 2484 270 16 902 50 0 646 0 0
+fn=ompi_comm_split
+0 226 19 19 65 5 0 56 1 0
+fn=ompi_comm_split_type
+0 203 17 16 70 12 0 48 1 0
+fn=ompi_cr_finalize
+0 10 2 1 4 1 0 1 0 0
+fn=ompi_cr_init
+0 38 4 4 12 7 0 13 2 0
+fn=ompi_datatype_create
+0 497 3 3 166 5 0 100 0 0
+fn=ompi_datatype_create_contiguous
+0 186 3 3 66 19 10 42 0 0
+fn=ompi_datatype_create_struct
+0 620 10 10 200 6 6 100 0 0
+fn=ompi_datatype_default_convertors_fini
+0 48 3 3 22 7 0 9 0 0
+fn=ompi_datatype_default_convertors_init
+0 16 2 2 9 4 1 4 1 0
+fn=ompi_datatype_finalize
+0 1622 4 4 736 93 2 81 0 0
+fn=ompi_datatype_init
+0 3119 125 125 1392 196 98 687 133 81
+fn=ompi_datatype_sndrcv
+0 2376 208 6 864 18 0 594 6 0
+fn=ompi_dpm_dyn_finalize
+0 7 2 2 3 1 0 0 0 0
+fn=ompi_dpm_dyn_init
+0 27 5 5 10 0 0 8 0 0
+fn=ompi_dpm_finalize
+0 2 1 0 1 0 0 0 0 0
+fn=ompi_dpm_init
+0 12 2 2 3 1 0 2 0 0
+fn=ompi_dpm_mark_dyncomm
+0 468 72 3 162 0 0 90 0 0
+fn=ompi_errcode_intern_finalize
+0 319 19 18 100 26 0 26 0 0
+fn=ompi_errcode_intern_init
+0 763 66 66 181 12 7 257 24 24
+fn=ompi_errhandler_finalize
+0 77 5 5 31 12 0 8 0 0
+fn=ompi_errhandler_init
+0 164 13 13 57 11 3 53 5 5
+fn=ompi_errhandler_registration_callback
+0 4 1 1 1 0 0 3 1 0
+fn=ompi_file_finalize
+0 319 6 6 115 9 0 28 0 0
+fn=ompi_file_init
+0 79 5 5 29 5 0 17 2 1
+fn=ompi_group_allocate
+0 38 2 1 10 0 0 8 0 0
+fn=ompi_group_allocate_plist_w_procs
+0 94 8 4 34 8 0 24 0 0
+fn=ompi_group_decrement_proc_count
+0 148 7 3 56 5 0 20 0 0
+fn=ompi_group_finalize
+0 49 4 2 18 9 0 7 0 0
+fn=ompi_group_get_proc_ptr_raw
+0 1068 18 0 445 15 0 178 0 0
+fn=ompi_group_have_remote_peers
+0 896 32 2 224 25 0 96 0 0
+fn=ompi_group_incl
+0 2 2 1 2 2 0 0 0 0
+fn=ompi_group_incl_plist
+0 102 6 3 34 6 0 26 0 0
+fn=ompi_group_increment_proc_count
+0 74 2 1 28 1 0 2 0 0
+fn=ompi_group_init
+0 84 6 6 31 5 1 20 3 3
+fn=ompi_hook_base_mpi_finalize_bottom
+0 13 3 1 7 3 1 3 0 0
+fn=ompi_hook_base_mpi_finalize_top
+0 19 4 4 9 4 0 3 0 0
+fn=ompi_hook_base_mpi_init_bottom
+0 31 5 5 12 4 2 6 0 0
+fn=ompi_hook_base_mpi_init_top
+0 25 4 4 10 0 0 6 0 0
+fn=ompi_hook_base_mpi_init_top_post_opal
+0 31 4 3 12 0 0 6 0 0
+fn=ompi_hook_base_mpi_initialized_bottom
+0 36 1 1 16 0 0 8 0 0
+fn=ompi_hook_base_mpi_initialized_top
+0 36 4 4 16 3 2 8 0 0
+fn=ompi_init_preconnect_mpi
+0 47 5 5 18 3 0 11 0 0
+fn=ompi_interlib_declare
+0 706 40 37 252 38 0 164 4 0
+fn=ompi_message_finalize
+0 47 4 2 18 7 0 5 0 0
+fn=ompi_message_init
+0 110 7 7 34 6 3 31 4 4
+fn=ompi_mpi_dynamics_finalize
+0 4 1 1 3 2 0 0 0 0
+fn=ompi_mpi_errcode_finalize
+0 998 59 58 313 81 0 81 0 0
+fn=ompi_mpi_errcode_init
+0 3271 304 304 657 52 48 1603 74 74
+fn=ompi_mpi_finalize
+0 363 36 31 140 88 5 74 1 0
+fn=ompi_mpi_init
+0 818 76 62 288 138 7 167 11 4
+fn=ompi_mpi_register_params
+0 378 28 28 58 19 0 156 4 2
+fn=ompi_mpi_thread_level
+0 22 1 1 10 5 0 8 0 0
+fn=ompi_mpiext_fini
+0 8 1 0 4 1 0 1 0 0
+fn=ompi_mpiext_init
+0 8 2 2 4 2 0 1 0 0
+fn=ompi_mpiinfo_finalize
+0 307 6 6 97 8 0 14 0 0
+fn=ompi_mpiinfo_init
+0 193 15 15 56 10 1 39 2 2
+fn=ompi_op_base_find_available
+0 27 3 3 10 0 0 8 0 0
+fn=ompi_op_base_op_select
+0 19802 20 20 5425 126 119 5017 0 0
+fn=ompi_op_finalize
+0 231 14 14 92 34 0 22 0 0
+fn=ompi_op_init
+0 220 19 19 41 22 2 66 13 3
+fn=ompi_osc_base_finalize
+0 127 4 3 57 10 0 24 2 0
+fn=ompi_osc_base_find_available
+0 104 7 5 43 20 0 18 1 0
+fn=ompi_osc_base_select
+0 1904 96 6 720 135 0 432 0 0
+fn=ompi_osc_sm_free
+0 768 80 3 464 48 0 224 0 0
+fn=ompi_pml_v_output_close
+0 7 1 0 5 3 0 3 0 0
+fn=ompi_pml_v_output_open
+0 97 7 7 45 11 0 23 1 1
+fn=ompi_proc_all
+0 39 3 2 15 0 0 9 0 0
+fn=ompi_proc_complete_init
+0 138 13 12 53 15 0 29 0 0
+fn=ompi_proc_complete_init_single
+0 28 4 4 14 2 0 6 0 0
+fn=ompi_proc_finalize
+0 96 5 5 32 12 0 13 0 0
+fn=ompi_proc_get_allocated
+0 146 12 6 46 8 0 30 1 0
+fn=ompi_proc_init
+0 108 8 8 43 21 1 23 4 4
+fn=ompi_proc_lookup
+0 19 2 2 6 1 0 4 0 0
+fn=ompi_proc_self
+0 19 2 2 9 0 0 5 0 0
+fn=ompi_request_finalize
+0 76 5 4 25 8 0 14 1 0
+fn=ompi_request_init
+0 135 10 10 37 14 1 48 4 3
+fn=ompi_rte_wait_for_debugger
+0 32 2 2 15 5 2 8 0 0
+fn=ompi_set_group_rank
+0 51 4 2 12 0 0 6 0 0
+fn=ompi_win_allocate_shared
+0 1088 96 4 320 32 0 240 16 0
+fn=ompi_win_finalize
+0 151 11 10 55 14 0 18 0 0
+fn=ompi_win_free
+0 1408 80 5 528 77 0 240 4 0
+fn=ompi_win_init
+0 86 6 6 32 7 1 18 2 2
+fn=ompi_win_set_name
+0 22 2 2 7 0 0 8 0 0
+fn=opal_arch_checkmask
+0 48 2 2 15 0 0 6 0 0
+fn=opal_arch_init
+0 4 1 1 2 1 0 1 0 0
+fn=opal_arch_set_fortran_logical_size
+0 10 1 1 3 1 0 0 0 0
+fn=opal_argv_append
+0 1235 11 1 455 23 0 390 1 0
+fn=opal_argv_append_nosize
+0 6623 40 3 2177 6 1 1904 0 0
+fn=opal_argv_append_unique_nosize
+0 133 2 2 41 0 0 28 0 0
+fn=opal_argv_count
+0 21836 14 1 5570 0 0 0 0 0
+fn=opal_argv_free
+0 1226 22 1 435 16 2 217 0 0
+fn=opal_argv_join
+0 212 8 4 41 2 0 33 0 0
+fn=opal_argv_split
+0 38 12 1 0 0 0 0 0 0
+fn=opal_basename
+0 13059 4 4 2699 44 0 665 0 0
+fn=opal_bitmap_clear_all_bits
+0 44 2 1 16 2 0 4 0 0
+fn=opal_bitmap_clear_bit
+0 228 2 1 48 1 0 0 0 0
+fn=opal_bitmap_find_and_set_first_unset_bit
+0 623 3 3 84 0 0 36 0 0
+fn=opal_bitmap_init
+0 52 4 2 12 2 0 10 0 0
+fn=opal_bitmap_is_set_bit
+0 38 1 1 8 0 0 0 0 0
+fn=opal_bitmap_set_bit
+0 32 2 2 9 0 0 4 0 0
+fn=opal_bitmap_set_max_size
+0 8 1 1 1 0 0 1 0 0
+fn=opal_class_finalize
+0 615 3 3 178 14 0 93 0 0
+fn=opal_class_initialize
+0 10383 158 8 2800 120 15 1797 35 0
+fn=opal_convertor_create
+0 82 3 3 31 4 1 25 0 0
+fn=opal_convertor_destroy_masters
+0 47 4 2 20 7 0 11 0 0
+fn=opal_convertor_find_or_create_master
+0 704 10 10 199 14 11 74 6 0
+fn=opal_cr_finalize
+0 27 2 2 12 5 0 7 1 0
+fn=opal_cr_init
+0 245 18 18 59 14 0 89 2 0
+fn=opal_cr_reg_coord_callback
+0 10 1 1 4 1 0 4 0 0
+fn=opal_datatype_add
+0 2643 17 17 753 4 0 350 0 0
+fn=opal_datatype_commit
+0 2453 27 27 803 0 0 680 10 0
+fn=opal_datatype_copy_content_same_ddt
+0 918 88 2 216 0 0 0 0 0
+fn=opal_datatype_create_desc
+0 187 2 2 33 0 0 55 0 0
+fn=opal_datatype_finalize
+0 10 4 2 4 2 0 2 0 0
+fn=opal_datatype_init
+0 1370 9 5 644 98 1 466 42 0
+fn=opal_datatype_register_params
+0 2 1 1 1 0 0 0 0 0
+fn=opal_deregister_params
+0 3 1 1 1 0 0 1 1 0
+fn=opal_dl_base_open
+0 3 1 1 2 1 0 0 0 0
+fn=opal_dl_base_select
+0 27 2 2 11 2 0 6 2 2
+fn=opal_dl_close
+0 360 15 0 135 94 0 0 0 0
+fn=opal_dl_foreachfile
+0 16 1 1 6 4 0 0 0 0
+fn=opal_dl_lookup
+0 360 45 1 135 135 0 0 0 0
+fn=opal_dl_open
+0 495 29 1 135 37 0 45 0 0
+fn=opal_dss_close
+0 3811 6 6 1459 66 57 196 0 0
+fn=opal_dss_open
+0 534 36 36 246 63 0 138 2 0
+fn=opal_dss_register
+0 77060 23 8 33215 89 0 2304 0 0
+fn=opal_dss_register_vars
+0 100 8 8 21 3 0 33 2 1
+fn=opal_error_register
+0 87 8 4 20 3 1 24 0 0
+fn=opal_ethtool_get_speed
+0 49 4 4 10 2 0 15 0 0
+fn=opal_event_base_create
+0 18 2 1 8 2 0 4 0 0
+fn=opal_event_finalize
+0 6 1 0 3 1 0 1 0 0
+fn=opal_event_init
+0 120 5 5 41 7 1 16 0 0
+fn=opal_finalize
+0 31 4 4 25 16 2 15 0 0
+fn=opal_finalize_util
+0 50 3 3 30 16 0 22 0 0
+fn=opal_free_list_grow_st
+0 10328 84 15 3692 36 1 1900 202 63
+fn=opal_free_list_init
+0 1210 34 6 441 39 2 378 8 0
+fn=opal_getpagesize
+0 16 2 1 7 3 0 2 0 0
+fn=opal_hash_table_get_first_key_ptr
+0 120 18 1 40 18 0 0 0 0
+fn=opal_hash_table_get_first_key_uint32
+0 51 16 1 17 17 0 0 0 0
+fn=opal_hash_table_get_next_key_ptr
+0 13190 36 2 2260 675 104 440 0 0
+fn=opal_hash_table_get_next_key_uint32
+0 7450 18 1 1265 249 0 261 0 0
+fn=opal_hash_table_get_value_ptr
+0 473558 153 4 74808 1442 245 21567 141 0
+fn=opal_hash_table_get_value_uint32
+0 9952 54 2 2512 104 0 808 15 0
+fn=opal_hash_table_init
+0 340 40 2 68 39 0 0 0 0
+fn=opal_hash_table_init2
+0 3536 123 3 680 10 0 1156 6 0
+fn=opal_hash_table_remove_all
+0 108866 19 1 29608 46 1 19553 3087 1666
+fn=opal_hash_table_remove_value_ptr
+0 114 4 4 20 4 0 8 0 0
+fn=opal_hash_table_remove_value_uint32
+0 2178 54 3 396 0 0 99 0 0
+fn=opal_hash_table_set_value_ptr
+0 209736 187 5 34737 76 0 15280 401 88
+fn=opal_hash_table_set_value_uint32
+0 2772 34 2 594 0 0 495 0 0
+fn=opal_home_directory
+0 4 1 0 2 1 0 0 0 0
+fn=opal_hwloc_base_filter_cpus
+0 69 7 7 30 10 1 17 0 0
+fn=opal_hwloc_base_free_topology
+0 58 4 4 21 9 2 10 0 0
+fn=opal_hwloc_base_get_local_cpuset
+0 24 3 3 10 1 0 5 0 0
+fn=opal_hwloc_base_get_obj_by_type
+0 78 3 3 18 1 0 15 0 0
+fn=opal_hwloc_base_get_topology
+0 703 61 49 258 56 1 151 5 0
+fn=opal_hwloc_base_set_binding_policy
+0 26 4 4 10 0 0 8 0 0
+fn=opal_hwloc_base_single_cpu
+0 82 3 3 18 3 0 16 0 0
+fn=opal_hwloc_base_topology_set_flags
+0 17 2 2 4 2 0 3 0 0
+fn=opal_ifbegin
+0 18 1 0 12 1 0 0 0 0
+fn=opal_ifcount
+0 3 1 1 3 2 0 0 0 0
+fn=opal_ifindextoaddr
+0 95 4 2 44 3 0 34 0 0
+fn=opal_ifindextokindex
+0 60 3 2 31 0 0 0 0 0
+fn=opal_ifindextoname
+0 37 4 2 12 1 0 2 0 0
+fn=opal_ifkindextoaddr
+0 51 3 3 23 2 0 17 0 0
+fn=opal_ifkindextoname
+0 42 1 1 12 0 0 2 0 0
+fn=opal_ifnext
+0 74 3 2 26 4 0 0 0 0
+fn=opal_info_dup
+0 459 34 2 170 1 0 102 0 0
+fn=opal_info_get
+0 2240 53 2 840 1 0 420 0 0
+fn=opal_info_get_bool
+0 432 32 2 144 0 0 96 0 0
+fn=opal_info_get_value_enum
+0 1088 48 3 352 17 0 288 0 0
+fn=opal_info_set
+0 2489 104 2 917 0 0 524 0 0
+fn=opal_infosubscribe_subscribe
+0 11288 382 14 3616 161 0 2808 0 0
+fn=opal_init
+0 100 11 8 28 16 0 18 0 0
+fn=opal_init_psm
+0 23 2 2 7 1 0 4 0 0
+fn=opal_init_util
+0 123 17 12 39 20 0 31 1 1
+fn=opal_install_dirs_expand_setup
+0 34 0 0 0 0 0 0 0 0
+fn=opal_libevent2022_EVUTIL_TOUPPER
+0 52 3 1 26 3 1 0 0 0
+fn=opal_libevent2022_event_active
+0 1564 78 4 644 51 0 230 0 0
+fn=opal_libevent2022_event_active_nolock
+0 4443 106 5 1701 75 0 768 13 1
+fn=opal_libevent2022_event_add
+0 620 25 2 240 14 0 120 0 0
+fn=opal_libevent2022_event_assign
+0 3363 117 7 708 57 0 1073 76 12
+fn=opal_libevent2022_event_base_free
+0 473 18 11 157 27 2 51 0 0
+fn=opal_libevent2022_event_base_loop
+0 14861 645 30 4869 311 3 2762 36 6
+fn=opal_libevent2022_event_base_loopbreak
+0 39 3 3 13 6 0 7 1 0
+fn=opal_libevent2022_event_base_loopexit
+0 6 2 2 1 1 0 0 0 0
+fn=opal_libevent2022_event_base_new
+0 18 2 2 6 3 0 5 0 0
+fn=opal_libevent2022_event_base_new_with_config
+0 619 45 16 175 30 0 152 1 0
+fn=opal_libevent2022_event_base_once
+0 58 5 5 14 2 0 15 0 0
+fn=opal_libevent2022_event_base_priority_init
+0 227 10 4 63 0 0 48 0 0
+fn=opal_libevent2022_event_changelist_freemem
+0 24 3 1 9 3 0 3 0 0
+fn=opal_libevent2022_event_changelist_init
+0 18 5 1 6 0 0 12 0 0
+fn=opal_libevent2022_event_changelist_remove_all
+0 405 35 1 90 0 0 45 0 0
+fn=opal_libevent2022_event_config_avoid_method
+0 50 2 2 14 2 0 20 0 0
+fn=opal_libevent2022_event_config_free
+0 60 4 3 24 1 1 12 1 1
+fn=opal_libevent2022_event_config_new
+0 20 2 1 4 2 0 6 0 0
+fn=opal_libevent2022_event_debug_unassign
+0 98 6 2 42 2 2 21 0 0
+fn=opal_libevent2022_event_deferred_cb_queue_init
+0 21 3 1 3 0 0 12 0 0
+fn=opal_libevent2022_event_del
+0 532 23 2 209 12 0 95 0 0
+fn=opal_libevent2022_event_global_setup_locks_
+0 18 1 1 6 3 0 5 0 0
+fn=opal_libevent2022_event_mm_calloc_
+0 76 12 2 38 5 1 0 0 0
+fn=opal_libevent2022_event_mm_free_
+0 152 6 2 76 3 0 0 0 0
+fn=opal_libevent2022_event_mm_malloc_
+0 44 0 0 22 0 0 0 0 0
+fn=opal_libevent2022_event_mm_realloc_
+0 36 3 0 18 3 0 0 0 0
+fn=opal_libevent2022_event_mm_strdup_
+0 22 2 2 10 0 0 6 0 0
+fn=opal_libevent2022_event_priority_set
+0 132 12 4 48 0 0 15 0 0
+fn=opal_libevent2022_evmap_io_active
+0 1462 62 3 520 50 0 147 0 0
+fn=opal_libevent2022_evmap_io_add
+0 1427 95 9 358 32 0 244 13 0
+fn=opal_libevent2022_evmap_io_clear
+0 3 3 1 3 3 0 0 0 0
+fn=opal_libevent2022_evmap_io_del
+0 1035 90 6 288 17 0 144 4 1
+fn=opal_libevent2022_evmap_io_initmap
+0 3 3 1 3 1 0 0 0 0
+fn=opal_libevent2022_evmap_signal_clear
+0 682 3 1 232 10 9 29 0 0
+fn=opal_libevent2022_evmap_signal_initmap
+0 18 3 1 6 0 0 12 0 0
+fn=opal_libevent2022_evsig_dealloc
+0 1104 14 5 246 4 0 33 0 0
+fn=opal_libevent2022_evsig_global_setup_locks_
+0 11 1 1 3 1 0 2 0 0
+fn=opal_libevent2022_evsig_init
+0 120 12 4 48 7 0 36 0 0
+fn=opal_libevent2022_evthread_make_base_notifiable
+0 156 18 6 45 4 0 33 0 0
+fn=opal_libevent2022_evthread_set_condition_callbacks
+0 61 5 3 28 3 1 5 0 0
+fn=opal_libevent2022_evthread_set_id_callback
+0 6 2 1 4 1 0 2 0 0
+fn=opal_libevent2022_evthread_set_lock_callbacks
+0 58 5 3 28 6 1 5 0 0
+fn=opal_libevent2022_evthread_setup_global_lock_
+0 69 3 3 18 0 0 6 0 0
+fn=opal_libevent2022_evthread_use_pthreads
+0 92 8 4 20 9 0 34 0 0
+fn=opal_libevent2022_evutil_closesocket
+0 9 2 1 9 3 0 0 0 0
+fn=opal_libevent2022_evutil_getenv
+0 133 6 2 49 13 0 42 0 0
+fn=opal_libevent2022_evutil_make_socket_closeonexec
+0 250 6 2 50 2 0 40 0 0
+fn=opal_libevent2022_evutil_make_socket_nonblocking
+0 225 3 1 45 0 0 36 0 0
+fn=opal_libevent2022_evutil_secure_rng_global_setup_locks_
+0 11 1 1 3 1 1 2 0 0
+fn=opal_libevent2022_evutil_snprintf
+0 66 9 3 15 1 0 27 0 0
+fn=opal_libevent2022_evutil_socketpair
+0 3 3 1 3 3 0 0 0 0
+fn=opal_libevent2022_evutil_tv_to_msec
+0 1026 57 2 171 0 0 0 0 0
+fn=opal_libevent2022_evutil_vsnprintf
+0 51 3 1 12 2 0 12 0 0
+fn=opal_list_sort
+0 2552 82 4 867 19 0 696 0 0
+fn=opal_malloc_finalize
+0 11 1 1 5 2 1 2 0 0
+fn=opal_malloc_init
+0 1 1 1 1 0 0 0 0 0
+fn=opal_mem_hooks_finalize
+0 30 3 3 9 1 0 5 1 0
+fn=opal_mem_hooks_init
+0 30 3 3 10 0 0 7 2 0
+fn=opal_memchecker_base_isaddressable
+0 6 0 0 6 0 0 0 0 0
+fn=opal_memchecker_base_isdefined
+0 6 0 0 6 0 0 0 0 0
+fn=opal_memchecker_base_runindebugger
+0 12 1 1 12 2 2 0 0 0
+fn=opal_memchecker_base_select
+0 32 3 2 13 4 0 8 0 0
+fn=opal_memchecker_valgrind_component_query
+0 7 2 2 3 0 0 2 0 0
+fn=opal_net_finalize
+0 7 1 1 3 1 1 2 0 0
+fn=opal_net_get_hostname
+0 4 1 1 4 1 0 0 0 0
+fn=opal_net_init
+0 231 8 8 70 4 0 33 1 1
+fn=opal_net_isaddr
+0 23 2 2 5 1 0 7 0 0
+fn=opal_net_prefix2netmask
+0 9 1 1 1 0 0 0 0 0
+fn=opal_net_samenetwork
+0 27 2 2 8 1 0 3 0 0
+fn=opal_os_dirpath_access
+0 96 5 5 25 2 0 12 0 0
+fn=opal_os_dirpath_create
+0 224 9 9 81 5 0 51 0 0
+fn=opal_os_dirpath_destroy
+0 213 8 8 66 7 0 45 0 0
+fn=opal_os_dirpath_is_empty
+0 194 2 2 61 1 1 28 0 0
+fn=opal_os_path
+0 411 16 14 93 4 0 90 1 0
+fn=opal_output_close
+0 1848 19 4 414 263 52 26 0 0
+fn=opal_output_finalize
+0 54 6 4 21 5 1 13 0 0
+fn=opal_output_get_verbosity
+0 20 5 1 5 0 0 0 0 0
+fn=opal_output_init
+0 833 14 14 43 11 2 545 73 73
+fn=opal_output_open
+0 21 5 0 0 0 0 0 0 0
+fn=opal_output_reopen
+0 1 1 1 0 0 0 0 0 0
+fn=opal_output_set_output_file_info
+0 32 3 3 11 1 0 10 0 0
+fn=opal_output_set_verbosity
+0 7 2 1 1 0 0 1 0 0
+fn=opal_output_verbose
+0 18406 134 3 3870 56 0 3776 21 0
+fn=opal_path_access
+0 54 4 4 11 3 0 7 0 0
+fn=opal_path_is_absolute
+0 3 0 0 2 1 0 0 0 0
+fn=opal_pmix_base_select
+0 88 4 4 67 9 0 59 7 0
+fn=opal_pmix_base_set_evbase
+0 3 1 1 2 0 0 1 0 0
+fn=opal_pmix_pmix3x_check_evars
+0 1772 11 11 603 13 0 388 0 0
+fn=opal_pointer_array_add
+0 67509 432 8 16792 210 0 5609 162 2
+fn=opal_pointer_array_init
+0 585 14 3 90 2 0 180 0 0
+fn=opal_pointer_array_set_item
+0 22710 157 9 6602 65 1 2182 0 0
+fn=opal_pointer_array_test_and_set_item
+0 1382 108 6 324 26 0 108 0 0
+fn=opal_proc_local_get
+0 42 10 1 42 3 0 0 0 0
+fn=opal_proc_local_set
+0 100 8 3 32 7 0 19 0 0
+fn=opal_proc_set_name
+0 3 1 1 2 0 0 1 1 1
+fn=opal_proc_table_init
+0 13 1 1 4 1 0 4 0 0
+fn=opal_proc_table_remove_value
+0 23 2 2 8 1 0 5 0 0
+fn=opal_progress
+0 2549 112 4 848 30 0 325 0 0
+fn=opal_progress_event_users_decrement
+0 2 1 1 3 1 0 0 0 0
+fn=opal_progress_event_users_increment
+0 8 2 1 10 1 0 0 0 0
+fn=opal_progress_finalize
+0 19 3 2 6 1 0 9 0 0
+fn=opal_progress_init
+0 124 4 4 37 1 0 25 2 1
+fn=opal_progress_register
+0 648 36 2 108 31 0 108 0 0
+fn=opal_progress_set_event_flag
+0 6 1 0 4 1 0 2 0 0
+fn=opal_progress_set_event_poll_rate
+0 18 1 1 6 2 0 7 1 0
+fn=opal_progress_set_yield_when_idle
+0 5 1 1 3 0 0 1 0 0
+fn=opal_progress_thread_finalize
+0 84 6 6 29 6 1 16 0 0
+fn=opal_progress_thread_init
+0 134 11 11 40 10 0 34 1 0
+fn=opal_progress_unregister
+0 468 70 2 108 0 0 72 0 0
+fn=opal_rand
+0 78 4 2 10 6 2 6 1 0
+fn=opal_random
+0 12 2 1 4 2 0 2 0 0
+fn=opal_rb_tree_delete
+0 1950 125 8 780 33 0 344 28 0
+fn=opal_rb_tree_destroy
+0 27 3 3 10 1 0 7 2 0
+fn=opal_rb_tree_find_with
+0 855 32 2 342 24 0 168 0 0
+fn=opal_rb_tree_init
+0 73 8 8 27 0 0 25 2 0
+fn=opal_rb_tree_insert
+0 3361 183 13 1445 148 0 882 33 0
+fn=opal_reachable_base_select
+0 28 2 2 12 2 0 7 1 0
+fn=opal_register_params
+0 388 27 26 72 9 0 144 3 1
+fn=opal_setenv
+0 1378 36 6 494 9 0 286 0 0
+fn=opal_shmem_base_close
+0 18 2 2 8 5 1 5 0 0
+fn=opal_shmem_base_select
+0 21 3 2 7 1 0 5 0 0
+fn=opal_show_help_finalize
+0 12 2 2 5 2 0 4 0 0
+fn=opal_show_help_init
+0 41 3 3 17 1 0 10 1 0
+fn=opal_srand
+0 40095 4 3 192 0 0 257 17 14
+fn=opal_str_to_bool
+0 1880 76 4 640 41 0 360 0 0
+fn=opal_strncpy
+0 33100 72 2 3428 0 0 4716 0 0
+fn=opal_thread_get_self
+0 36 3 3 14 7 0 9 0 0
+fn=opal_thread_join
+0 11 2 2 4 2 1 3 0 0
+fn=opal_thread_set_main
+0 5 2 2 2 0 0 2 1 0
+fn=opal_thread_start
+0 12 1 1 3 1 0 1 0 0
+fn=opal_timer_base_get_freq
+0 2 1 1 2 1 0 0 0 0
+fn=opal_tmp_directory
+0 51 6 2 12 0 0 9 0 0
+fn=opal_tsd_key_create
+0 34 3 3 13 3 0 12 0 0
+fn=opal_tsd_keys_destruct
+0 37 3 3 15 3 0 8 0 0
+fn=opal_unsetenv
+0 4057 11 5 1043 31 0 899 0 0
+fn=opal_util_init_sys_limits
+0 27 3 3 12 0 0 8 0 0
+fn=opal_util_keyval_init_buffer
+0 16 1 1 6 1 0 4 0 0
+fn=opal_util_keyval_parse
+0 1366 6 6 430 5 0 170 4 4
+fn=opal_util_keyval_parse_finalize
+0 26 2 2 8 4 0 5 0 0
+fn=opal_util_keyval_parse_init
+0 27 3 3 10 0 0 5 1 1
+fn=opal_util_keyval_save_internal_envars
+0 10 1 0 4 1 1 0 0 0
+fn=opal_util_keyval_yy_create_buffer
+0 52 2 2 12 1 0 18 0 0
+fn=opal_util_keyval_yy_delete_buffer
+0 40 3 3 16 0 0 6 0 0
+fn=opal_util_keyval_yy_flush_buffer
+0 90 3 3 36 1 1 34 0 0
+fn=opal_util_keyval_yy_switch_to_buffer
+0 58 3 3 24 0 0 18 0 0
+fn=opal_util_keyval_yyalloc
+0 8 1 1 8 0 0 0 0 0
+fn=opal_util_keyval_yyfree
+0 8 0 0 8 0 0 0 0 0
+fn=opal_util_keyval_yylex
+0 253402 37 37 60982 83 76 7966 6 6
+fn=opal_util_keyval_yylex_destroy
+0 86 4 4 34 2 0 36 0 0
+fn=opal_util_keyval_yypop_buffer_state
+0 16 0 0 8 0 0 0 0 0
+fn=opal_util_keyval_yyrestart
+0 66 2 2 34 0 0 18 0 0
+fn=opal_util_keyval_yywrap
+0 8 1 1 4 0 0 2 0 0
+fn=opal_util_register_stackhandlers
+0 271 13 13 57 6 0 46 1 0
+fn=opal_value_array_set_size
+0 14152 76 2 3862 16 0 3087 0 0
+fn=opal_value_load
+0 68 4 4 12 2 1 10 0 0
+fn=opal_value_unload
+0 209 16 5 63 9 2 39 1 0
+fn=open
+0 777 36 10 162 0 0 131 1 0
+fn=open_path
+0 4170 65 22 1160 9 0 705 8 5
+fn=open_verify.constprop.0
+0 19211 827 18 4589 597 23 1420 101 4
+fn=openaux
+0 43164 64 1 19184 5 0 7194 12 1
+fn=opendir
+0 170 5 1 17 5 0 17 1 0
+fn=opendir_tail
+0 439 15 3 112 3 0 71 0 0
+fn=openlog
+0 29 3 3 9 1 1 4 0 0
+fn=openlog_internal
+0 45 5 5 9 1 1 19 3 2
+fn=orte_dt_init
+0 273 20 20 136 51 0 66 1 0
+fn=orte_errmgr_base_select
+0 34 3 3 13 7 0 8 1 0
+fn=orte_ess_base_proc_binding
+0 165 19 17 61 32 1 32 2 0
+fn=orte_ess_base_select
+0 27 3 3 11 3 0 6 1 0
+fn=orte_ess_base_std_prolog
+0 15 1 1 7 1 0 4 0 0
+fn=orte_finalize
+0 59 6 5 29 27 10 12 0 0
+fn=orte_init
+0 128 19 13 48 30 1 34 5 1
+fn=orte_locks_init
+0 10 2 2 5 4 0 4 1 0
+fn=orte_proc_info
+0 244 20 17 53 8 0 94 4 3
+fn=orte_proc_info_finalize
+0 55 6 6 23 5 0 18 0 0
+fn=orte_register_params
+0 1265 92 91 188 73 0 573 16 2
+fn=orte_rml_base_parse_uris
+0 66 3 3 18 2 0 18 0 0
+fn=orte_schizo_base_check_launch_environment
+0 40 4 2 14 5 0 6 0 0
+fn=orte_schizo_base_finalize
+0 21 2 2 8 4 2 3 0 0
+fn=orte_schizo_base_print_env
+0 9 3 3 2 1 1 0 0 0
+fn=orte_schizo_base_select
+0 184 12 12 73 6 0 36 0 0
+fn=orte_session_dir
+0 33 5 5 11 3 0 6 0 0
+fn=orte_session_dir_finalize
+0 77 9 9 36 12 4 12 0 0
+fn=orte_session_setup_base
+0 60 7 7 22 7 0 13 0 0
+fn=orte_setup_top_session_dir
+0 33 4 4 12 5 0 7 0 0
+fn=orte_show_help_finalize
+0 19 2 2 10 4 1 6 1 0
+fn=orte_show_help_init
+0 77 6 6 29 10 1 17 2 1
+fn=orte_state_base_add_job_state
+0 71 5 5 23 6 0 20 0 0
+fn=orte_state_base_add_proc_state
+0 68 5 5 22 8 0 19 0 0
+fn=orte_state_base_select
+0 40 5 4 16 5 0 11 2 1
+fn=orte_util_compare_name_fields
+0 124 6 3 17 0 0 0 0 0
+fn=orte_util_convert_string_to_jobid
+0 34 4 2 8 3 0 6 0 0
+fn=orte_util_convert_string_to_process_name
+0 106 4 4 26 2 0 28 0 0
+fn=orte_util_convert_string_to_sysinfo
+0 37 3 3 13 0 0 9 0 0
+fn=orte_util_print_jobids
+0 1242 43 3 279 28 0 186 2 0
+fn=orte_util_print_name_args
+0 1277 27 3 465 30 0 279 1 0
+fn=orte_util_print_vpids
+0 1003 52 4 240 2 0 163 6 0
+fn=orte_util_snprintf_jobid
+0 12 2 2 2 0 0 1 0 0
+fn=pipe
+0 12 1 1 2 0 0 0 0 0
+fn=pmix3x_client_finalize
+0 432 25 16 174 26 0 94 1 0
+fn=pmix3x_client_init
+0 512 33 26 152 36 0 115 1 0
+fn=pmix3x_commit
+0 24 4 3 10 5 0 8 0 0
+fn=pmix3x_convert_jobid
+0 102 11 2 45 18 0 0 0 0
+fn=pmix3x_convert_opalrank
+0 22 11 0 11 0 0 0 0 0
+fn=pmix3x_convert_opalrc
+0 18 4 2 4 2 2 0 0 0
+fn=pmix3x_convert_opalscope
+0 15 2 1 3 0 0 0 0 0
+fn=pmix3x_convert_rank
+0 4 2 1 2 0 0 0 0 0
+fn=pmix3x_convert_rc
+0 308 16 2 56 13 3 0 0 0
+fn=pmix3x_event_hdlr
+0 481 17 17 166 11 0 122 0 0
+fn=pmix3x_fencenb
+0 371 27 11 106 36 1 89 0 0
+fn=pmix3x_get
+0 1656 131 20 502 93 0 359 6 0
+fn=pmix3x_initialized
+0 27 3 3 13 7 0 9 0 0
+fn=pmix3x_put
+0 203 13 7 78 20 0 61 0 0
+fn=pmix3x_store_local
+0 131 13 13 49 15 0 39 0 0
+fn=pmix3x_value_load
+0 487 33 6 176 15 2 120 0 0
+fn=pmix3x_value_unload
+0 372 25 7 140 5 1 104 0 0
+fn=pmix_common_dstor_attach_new_lock_seg
+0 41 3 3 12 0 0 13 1 1
+fn=pmix_common_dstor_attach_new_segment
+0 193 11 6 48 1 0 54 4 4
+fn=pmix_common_dstor_delete_sm_desc
+0 145 2 2 60 11 1 40 0 0
+fn=pmix_common_dstor_fetch
+0 844 27 9 308 18 0 192 2 0
+fn=pmix_common_dstor_finalize
+0 486 16 16 137 26 6 156 8 1
+fn=pmix_common_dstor_getpagesize
+0 25 1 1 10 1 0 5 0 0
+fn=pmix_common_dstor_init
+0 924 47 34 241 17 0 319 10 7
+fn=pmix_common_dstor_init_segment_info
+0 8 3 2 2 0 0 6 2 0
+fn=pmix_common_dstor_store_job_info
+0 20 2 2 8 3 0 4 0 0
+fn=pmix_ds12_lock_finalize
+0 34 3 3 19 4 0 10 0 0
+fn=pmix_ds21_lock_finalize
+0 77 6 6 29 5 1 15 0 0
+fn=pmix_ds21_lock_rd_get
+0 576 18 3 272 30 0 96 0 0
+fn=pmix_ds21_lock_rd_rel
+0 240 8 2 128 0 0 16 0 0
+fn=pmix_event_assign
+0 294 20 1 98 16 0 49 0 0
+fn=pmix_execute_epilog
+0 216 7 5 84 12 5 66 1 0
+fn=pmix_gds_ds12_lock_init
+0 75 7 7 27 1 0 17 1 1
+fn=pmix_gds_ds21_lock_init
+0 148 10 10 52 10 1 37 0 0
+fn=pmix_invoke_local_event_hdlr
+0 186 13 13 57 8 0 31 0 0
+fn=pmix_mca_base_internal_env_store
+0 4 1 1 2 0 0 0 0 0
+fn=pmix_mca_base_parse_paramfile
+0 16 1 1 4 0 0 8 1 1
+fn=pmix_mca_base_var_generate_full_name4
+0 92714 57 9 19134 56 1 17614 7 0
+fn=pmix_mca_base_var_group_add_var
+0 9185 137 3 2943 7 0 1015 0 0
+fn=pmix_mca_base_var_group_finalize
+0 2109 5 5 720 69 23 100 0 0
+fn=pmix_mca_base_var_group_get_internal
+0 8565 16 2 2392 83 14 551 0 0
+fn=pmix_mca_base_var_group_init
+0 65 6 6 26 1 1 11 1 1
+fn=pmix_notify_check_affected
+0 25 3 3 7 0 0 6 0 0
+fn=pmix_notify_check_range
+0 20 1 1 7 1 0 5 0 0
+fn=pmix_pdl_base_open
+0 3 1 1 2 0 0 0 0 0
+fn=pmix_pdl_base_select
+0 27 2 2 11 3 0 6 1 1
+fn=pmix_pdl_close
+0 128 2 1 48 32 0 0 0 0
+fn=pmix_pdl_foreachfile
+0 16 0 0 6 1 0 0 0 0
+fn=pmix_pdl_lookup
+0 128 16 0 48 46 0 0 0 0
+fn=pmix_pdl_open
+0 176 19 2 48 10 0 16 0 0
+fn=pmix_pinstall_dirs_expand_setup
+0 34 0 0 0 0 0 0 0 0
+fn=pmix_plog_base_select
+0 331 18 18 126 9 2 61 0 0
+fn=pmix_prep_event_chain
+0 921 9 9 325 0 0 93 0 0
+fn=pmix_progress_thread_init
+0 141 10 10 49 8 1 30 1 1
+fn=pmix_progress_thread_pause
+0 38 3 3 13 3 2 8 0 0
+fn=pmix_progress_thread_stop
+0 67 4 4 23 7 2 12 0 0
+fn=pmix_ptl_base_peer_is_earlier
+0 384 11 4 48 4 0 0 0 0
+fn=pmix_util_keyval_init_buffer
+0 16 1 1 6 2 0 4 0 0
+fn=pmix_util_keyval_yy_create_buffer
+0 52 2 2 12 1 0 18 0 0
+fn=pmix_util_keyval_yy_delete_buffer
+0 40 3 3 16 1 0 6 0 0
+fn=pmix_util_keyval_yy_flush_buffer
+0 90 2 2 36 1 1 34 0 0
+fn=pmix_util_keyval_yy_switch_to_buffer
+0 58 3 3 24 1 0 18 0 0
+fn=pmix_util_keyval_yyalloc
+0 8 0 0 8 0 0 0 0 0
+fn=pmix_util_keyval_yyfree
+0 8 0 0 8 0 0 0 0 0
+fn=pmix_util_keyval_yylex
+0 254746 40 38 61302 82 76 7998 7 7
+fn=pmix_util_keyval_yylex_destroy
+0 86 5 5 34 0 0 36 0 0
+fn=pmix_util_keyval_yypop_buffer_state
+0 16 1 1 8 0 0 0 0 0
+fn=pmix_util_keyval_yyrestart
+0 66 2 2 34 0 0 18 0 0
+fn=pmix_util_keyval_yywrap
+0 8 0 0 4 0 0 2 0 0
+fn=poll
+0 276 34 3 72 2 0 72 2 0
+fn=posix_memalign
+0 50 2 2 6 0 0 6 0 0
+fn=powf
+0 9 1 1 4 0 0 0 0 0
+fn=pthread_attr_destroy
+0 12 4 2 4 0 0 0 0 0
+fn=pthread_cond_broadcast@@GLIBC_2.3.2
+0 4036 191 11 1242 19 1 753 11 0
+fn=pthread_cond_destroy@@GLIBC_2.3.2
+0 594 32 2 99 14 3 0 0 0
+fn=pthread_cond_init@@GLIBC_2.3.2
+0 710 34 2 71 0 0 213 23 8
+fn=pthread_cond_wait@@GLIBC_2.3.2
+0 1887 124 8 442 9 0 391 5 0
+fn=pthread_create@@GLIBC_2.2.5
+0 591 62 31 160 22 0 144 25 22
+fn=pthread_getattr_default_np
+0 36 2 1 10 2 0 4 0 0
+fn=pthread_getspecific
+0 5184 130 2 1439 270 0 0 0 0
+fn=pthread_join
+0 10 4 2 0 0 0 0 0 0
+fn=pthread_key_create
+0 81 9 3 12 3 0 6 1 1
+fn=pthread_mutex_destroy
+0 3420 50 2 855 75 2 285 0 0
+fn=pthread_mutex_init
+0 10014 192 5 2662 2 0 2988 60 39
+fn=pthread_mutex_lock
+0 35505 259 6 9999 586 7 2833 0 0
+fn=pthread_mutex_unlock
+0 3264 38 1 0 0 0 0 0 0
+fn=pthread_mutexattr_init
+0 8 2 1 2 0 0 2 2 1
+fn=pthread_mutexattr_settype
+0 26 4 2 4 0 0 2 0 0
+fn=pthread_once
+0 1495 95 2 495 135 2 0 0 0
+fn=pthread_rwlock_destroy
+0 4 1 1 1 0 0 0 0 0
+fn=pthread_rwlock_unlock
+0 2880 10 10 792 0 0 216 0 0
+fn=pthread_rwlock_wrlock
+0 2914 8 6 868 5 3 578 0 0
+fn=pthread_self
+0 663 26 1 442 0 0 0 0 0
+fn=pthread_setcancelstate
+0 59 2 2 10 0 0 3 0 0
+fn=pthread_setspecific
+0 135 12 4 28 1 0 27 3 0
+fn=ptmalloc_init.part.0
+0 724 8 8 11 6 2 275 37 34
+fn=qsort
+0 126 39 1 0 0 0 0 0 0
+fn=qsort_r
+0 2805 229 6 624 0 0 753 1 0
+fn=rand_r
+0 40 3 2 4 0 0 2 0 0
+fn=rawmemchr
+0 12 2 2 4 0 0 0 0 0
+fn=read
+0 1387 43 5 360 0 0 318 6 0
+fn=read_int
+0 9559 52 5 1614 1 1 603 0 0
+fn=readdir
+0 7582 26 4 3085 58 47 1258 0 0
+fn=realloc
+0 128943 520 13 30233 122 0 16238 2 0
+fn=realloc_hook_ini
+0 19 2 2 5 1 0 4 0 0
+fn=recv
+0 60 3 3 16 0 0 16 1 0
+fn=rewind
+0 90 3 3 32 0 0 14 0 0
+fn=rewinddir
+0 192 4 3 54 0 0 42 0 0
+fn=rindex
+0 120 7 1 40 15 0 0 0 0
+fn=rmdir
+0 6 1 1 1 0 0 0 0 0
+fn=round_and_return
+0 231 14 14 38 1 1 31 1 0
+fn=round_away
+0 36 4 4 3 0 0 0 0 0
+fn=rtld_calloc
+0 351 1 1 39 0 0 0 0 0
+fn=rtld_free
+0 118 1 1 45 0 0 2 0 0
+fn=rtld_lock_default_lock_recursive
+0 417 1 1 278 14 1 0 0 0
+fn=rtld_lock_default_unlock_recursive
+0 417 0 0 278 0 0 0 0 0
+fn=rtld_malloc
+0 2588 4 4 507 2 0 506 2 0
+fn=rtnl_ematch_lookup_ops
+0 96 1 1 30 0 0 0 0 0
+fn=rtnl_ematch_register
+0 120 3 3 45 3 0 40 5 0
+fn=rtnl_link_af_register
+0 102 3 3 36 5 2 24 0 0
+fn=rtnl_link_af_unregister
+0 102 3 3 36 5 5 21 0 0
+fn=rtnl_link_register_info
+0 798 3 3 252 20 0 231 30 10
+fn=rtnl_link_unregister_info
+0 2005 3 3 481 53 41 168 0 0
+fn=rtnl_tc_lookup_ops
+0 1980 3 3 624 1 0 248 0 0
+fn=rtnl_tc_read_classid_file
+0 3452 10 10 679 8 0 625 1 0
+fn=rtnl_tc_register
+0 853 3 3 240 30 1 189 43 12
+fn=rtnl_tc_str2handle
+0 180 6 6 51 2 0 33 0 0
+fn=rtnl_tc_type_register
+0 24 1 1 8 4 0 4 1 1
+fn=rtnl_tc_type_unregister
+0 24 1 1 8 4 1 4 0 0
+fn=rtnl_tc_unregister
+0 150 1 1 90 20 16 60 27 24
+fn=sbrk
+0 392 33 5 110 27 2 60 0 0
+fn=sched_getaffinity@@GLIBC_2.3.4
+0 230 2 2 10 0 0 10 0 0
+fn=send
+0 30 3 3 8 0 0 8 0 0
+fn=setenv
+0 598 6 1 104 0 0 104 0 0
+fn=setmntent
+0 37 3 3 8 0 0 9 0 0
+fn=setsockopt
+0 28 2 1 4 0 0 0 0 0
+fn=shm_open
+0 78 6 6 15 0 0 16 0 0
+fn=shm_unlink
+0 62 5 5 12 0 0 12 0 0
+fn=shmat
+0 6 1 1 1 0 0 0 0 0
+fn=shmctl@@GLIBC_2.2.5
+0 12 1 1 2 0 0 0 0 0
+fn=shmdt
+0 6 0 0 1 0 0 0 0 0
+fn=shmem_posix_shm_open
+0 50 4 3 14 2 0 10 0 0
+fn=shmget
+0 7 2 2 1 0 0 0 0 0
+fn=shutdown
+0 12 4 0 2 0 0 0 0 0
+fn=sigaction
+0 64 1 1 0 0 0 0 0 0
+fn=sin
+0 9 1 1 4 0 0 0 0 0
+fn=sincosf
+0 9 1 1 4 0 0 0 0 0
+fn=sinf
+0 9 1 1 4 0 0 0 0 0
+fn=snprintf
+0 96 12 4 16 0 0 36 2 2
+fn=socket
+0 30 4 1 5 0 0 0 0 0
+fn=socketpair
+0 21 3 1 3 0 0 0 0 0
+fn=sprintf
+0 28 4 3 4 0 0 10 0 0
+fn=sqrt
+0 80 32 2 0 0 0 0 0 0
+fn=standard_deviation(double*, int)
+0 61360 80 5 30560 0 0 3344 0 0
+fn=start_thread
+0 182 18 9 54 10 1 36 4 2
+fn=statfs
+0 6 1 1 1 0 0 0 0 0
+fn=stpcpy
+0 66 7 1 24 9 0 0 0 0
+fn=stpncpy
+0 11 2 2 4 0 0 0 0 0
+fn=str_to_mpn.part.0
+0 286 10 10 61 2 1 36 1 0
+fn=strcasecmp
+0 91 14 2 39 23 0 0 0 0
+fn=strcasecmp_l
+0 7 1 1 3 0 0 0 0 0
+fn=strcat
+0 77 6 2 28 14 0 0 0 0
+fn=strchrnul
+0 12 1 1 4 0 0 0 0 0
+fn=strcmp
+0 3451226 2391 81 721115 18229 1070 0 0 0
+fn=strcpy
+0 132 7 1 48 14 0 0 0 0
+fn=strcspn
+0 248 7 5 112 2 1 34 4 4
+fn=strdup
+0 61326 344 4 6908 26 0 13628 4 0
+fn=strlen
+0 11196 153 8 1675 105 12 0 0 0
+fn=strncasecmp
+0 56 4 1 24 11 0 0 0 0
+fn=strncasecmp_l
+0 7 1 1 3 0 0 0 0 0
+fn=strncat
+0 55 7 1 20 2 0 0 0 0
+fn=strncmp
+0 165 13 1 60 23 0 0 0 0
+fn=strncpy
+0 198 22 3 72 34 0 0 0 0
+fn=strnlen
+0 60 4 2 20 2 0 0 0 0
+fn=strpbrk
+0 14 0 0 6 1 0 0 0 0
+fn=strsep
+0 6378 17 5 1414 6 1 1186 0 0
+fn=strspn
+0 35 2 1 15 5 0 0 0 0
+fn=strstr
+0 63 10 2 27 17 0 0 0 0
+fn=strtod
+0 20 1 1 8 0 0 0 0 0
+fn=strtok_r
+0 431 12 2 104 1 0 92 0 0
+fn=strtol
+0 180 3 0 72 4 0 0 0 0
+fn=strtoul
+0 700 5 0 280 5 0 0 0 0
+fn=sysconf
+0 266 18 6 63 3 1 42 0 0
+fn=sysmalloc
+0 1661 145 23 393 37 1 260 21 17
+fn=systrim.constprop.0
+0 103 4 4 36 0 0 16 0 0
+fn=tcache_init.part.0
+0 360 13 5 25 0 0 256 27 27
+fn=tcgetattr
+0 184 6 3 40 0 0 16 0 0
+fn=tdestroy
+0 4 1 1 0 0 0 0 0 0
+fn=tdestroy_recurse
+0 58 2 2 15 3 2 11 0 0
+fn=tfind
+0 1873 19 3 360 8 0 206 0 0
+fn=time
+0 49 15 3 21 9 0 0 0 0
+fn=time_syscall
+0 12 1 0 2 0 0 0 0 0
+fn=tsearch
+0 4788 43 6 1095 0 0 966 0 0
+fn=uname
+0 66 16 3 11 0 0 0 0 0
+fn=unlink
+0 6 2 2 1 0 0 0 0 0
+fn=unlink_chunk.constprop.0
+0 196050 121 3 76193 5734 0 21442 0 0
+fn=unsetenv
+0 5583 5 5 645 16 0 589 0 0
+fn=update_usable.constprop.0
+0 126 10 10 34 0 0 24 2 2
+fn=uselocale
+0 132 4 2 54 15 0 24 0 0
+fn=usleep
+0 154 9 2 28 2 0 28 0 0
+fn=version_check_doit
+0 11 1 1 4 0 0 2 0 0
+fn=void Wrapper_Hy_Allgather<double>(double*, double*, int, ompi_datatype_t*, allgather_param*, comm_package*)
+0 4008000 64 4 1282560 4 0 1122240 0 0
+fn=wcschr
+0 24 1 1 8 0 0 0 0 0
+fn=wcscmp
+0 24 1 1 8 3 0 0 0 0
+fn=wcscpy
+0 7 1 1 3 0 0 0 0 0
+fn=wcslen
+0 24 2 2 8 2 0 0 0 0
+fn=wcsnlen
+0 11 2 2 4 0 0 0 0 0
+fn=wctob
+0 2816 2 2 896 0 0 512 0 0
+fn=wctype_l
+0 1036 3 3 158 4 0 177 0 0
+fn=where_is_shmfs
+0 38 4 4 11 0 0 10 0 0
+fn=wmemchr
+0 36 1 1 12 0 0 0 0 0
+fn=wmemcmp
+0 28 2 2 10 4 0 0 0 0
+fn=wmemset
+0 48 2 2 12 3 0 0 0 0
+fn=write
+0 897 81 4 234 0 0 234 0 0
+fn=writev
+0 345 29 3 90 0 0 90 0 0
+fn=xmlAddChild
+0 3368 16 6 1018 1 0 574 0 0
+fn=xmlAllocParserInputBuffer
+0 43 4 4 9 0 0 19 1 0
+fn=xmlBufAdd
+0 61 5 5 19 1 0 9 0 0
+fn=xmlBufAddLen
+0 2888 3 3 532 0 0 304 0 0
+fn=xmlBufAvail
+0 1520 2 2 456 0 0 0 0 0
+fn=xmlBufContent
+0 539 1 1 231 1 0 0 0 0
+fn=xmlBufCreateSize
+0 37 4 4 9 0 0 15 0 0
+fn=xmlBufEnd
+0 2754 1 1 1071 0 0 0 0 0
+fn=xmlBufFree
+0 23 2 1 7 0 0 3 0 0
+fn=xmlBufGrow
+0 1368 1 1 304 0 0 152 0 0
+fn=xmlBufResetInput
+0 25 2 2 7 0 0 3 0 0
+fn=xmlBufSetAllocationScheme
+0 20 2 2 4 0 0 1 0 0
+fn=xmlBufShrink
+0 53 5 5 17 1 0 8 0 0
+fn=xmlBufUse
+0 1386 1 1 462 0 0 0 0 0
+fn=xmlCharStrdup
+0 226 1 1 62 0 0 0 0 0
+fn=xmlCharStrndup
+0 586 2 2 102 0 0 94 0 0
+fn=xmlCheckVersion
+0 14 2 2 4 0 0 4 0 0
+fn=xmlCreateIntSubset
+0 86 5 5 13 0 0 33 2 0
+fn=xmlCreateMemoryParserCtxt
+0 38 3 3 6 0 0 10 0 0
+fn=xmlCurrentChar
+0 385 4 4 132 0 0 55 0 0
+fn=xmlDefaultSAXHandlerInit
+0 118 6 6 4 1 0 58 3 0
+fn=xmlDetectCharEncoding
+0 21 4 4 5 0 0 0 0 0
+fn=xmlDictCreate
+0 550 4 4 8 0 0 526 64 63
+fn=xmlDictFree
+0 1979 8 6 522 79 0 83 0 0
+fn=xmlDictLookup
+0 31165 22 13 7527 37 0 4972 1 0
+fn=xmlDictOwns
+0 11417 2 2 2190 2 0 0 0 0
+fn=xmlDictReference
+0 15 1 1 6 0 0 3 0 0
+fn=xmlDictSetLimit
+0 5 1 1 2 0 0 1 0 0
+fn=xmlDocGetRootElement
+0 13 1 1 5 1 0 0 0 0
+fn=xmlFreeDoc
+0 94 9 9 27 7 0 18 0 0
+fn=xmlFreeDtd
+0 71 7 7 23 3 0 8 0 0
+fn=xmlFreeInputStream
+0 33 2 2 11 1 0 4 0 0
+fn=xmlFreeNodeList
+0 30682 10 10 7821 856 0 3590 5 0
+fn=xmlFreeParserCtxt
+0 3 1 1 0 0 0 0 0 0
+fn=xmlFreeParserInputBuffer
+0 23 2 2 8 1 0 3 0 0
+fn=xmlFreeProp
+0 9731 3 3 3156 172 0 1315 0 0
+fn=xmlFreeURI
+0 40 3 3 13 0 0 2 0 0
+fn=xmlGetCharEncodingHandler
+0 14 2 2 4 1 1 1 0 0
+fn=xmlGetDtdAttrDesc
+0 12624 3 3 4734 0 0 3156 0 0
+fn=xmlGetDtdElementDesc
+0 2275 8 4 728 0 0 455 0 0
+fn=xmlGetEncodingAlias
+0 168 3 3 64 0 0 32 0 0
+fn=xmlGetIntSubset
+0 16 2 2 6 2 0 0 0 0
+fn=xmlGetLastChild
+0 546 1 1 273 0 0 0 0 0
+fn=xmlGetProp
+0 7 1 1 0 0 0 1 0 0
+fn=xmlHasProp
+0 28 2 2 8 1 0 5 0 0
+fn=xmlInitCharEncodingHandlers
+0 45 6 6 6 2 0 12 1 0
+fn=xmlInitGlobals
+0 7 2 2 2 1 1 2 0 0
+fn=xmlInitMemory
+0 20 2 2 5 2 1 6 1 1
+fn=xmlInitParser
+0 4 1 1 1 1 0 0 0 0
+fn=xmlInitParserCtxt
+0 152 21 21 32 3 1 76 0 0
+fn=xmlInitThreads
+0 48 4 4 17 15 0 1 0 0
+fn=xmlInitializeDict
+0 2 0 0 1 0 0 0 0 0
+fn=xmlInputReadCallbackNop
+0 2 1 1 1 0 0 0 0 0
+fn=xmlIsID
+0 19988 10 10 5523 0 0 2367 0 0
+fn=xmlIsMainThread
+0 289 4 2 85 2 0 34 0 0
+fn=xmlIsMixedElement
+0 2002 3 3 455 0 0 273 0 0
+fn=xmlIsRef
+0 7890 3 3 2367 0 0 1052 0 0
+fn=xmlNewCharEncodingHandler
+0 982 4 4 244 11 6 198 7 0
+fn=xmlNewDoc
+0 64 4 4 7 0 0 33 1 1
+fn=xmlNewDocNodeEatName
+0 1776 8 3 370 0 0 444 0 0
+fn=xmlNewInputStream
+0 46 3 3 6 0 0 21 0 0
+fn=xmlNewMutex
+0 30 2 2 10 1 0 6 0 0
+fn=xmlNewNodeEatName
+0 3626 3 3 592 0 0 1702 64 63
+fn=xmlNewNsPropEatName
+0 1052 1 1 0 0 0 0 0 0
+fn=xmlNewParserCtxt
+0 117 2 2 4 0 0 98 11 0
+fn=xmlNewRMutex
+0 19 2 2 6 0 0 5 0 0
+fn=xmlNextChar
+0 12132 14 9 4793 0 0 1412 0 0
+fn=xmlNodeIsText
+0 876 11 1 292 1 0 0 0 0
+fn=xmlParseCharData
+0 11521 9 9 3504 8 0 918 0 0
+fn=xmlParseContent
+0 7194 9 9 1954 2 0 202 0 0
+fn=xmlParseDocTypeDecl
+0 75 7 7 22 0 0 17 0 0
+fn=xmlParseDocument
+0 267 25 24 96 2 0 37 0 0
+fn=xmlParseEncName
+0 143 6 6 29 0 0 20 0 0
+fn=xmlParseEncodingDecl
+0 85 10 10 27 0 0 14 0 0
+fn=xmlParseExternalID
+0 51 5 5 18 0 0 7 0 0
+fn=xmlParseMisc
+0 83 4 3 29 0 0 5 0 0
+fn=xmlParseName
+0 121 6 6 27 0 0 9 0 0
+fn=xmlParseSDDecl
+0 15 3 3 6 0 0 3 0 0
+fn=xmlParseSystemLiteral
+0 467 11 11 92 0 0 47 0 0
+fn=xmlParseVersionInfo
+0 59 6 6 24 0 0 9 0 0
+fn=xmlParseVersionNum
+0 61 5 5 21 0 0 14 0 0
+fn=xmlParseXMLDecl
+0 85 10 10 30 0 0 16 0 0
+fn=xmlParserInputBufferCreateMem
+0 29 3 3 7 0 0 8 0 0
+fn=xmlParserInputBufferGrow
+0 3800 5 5 1140 3 0 684 0 0
+fn=xmlParserInputGrow
+0 4104 4 4 1216 0 0 684 0 0
+fn=xmlParserInputShrink
+0 43 3 3 15 1 0 7 0 0
+fn=xmlPathToURI
+0 50 3 3 7 0 0 18 0 0
+fn=xmlRMutexLock
+0 110 9 3 40 3 0 35 0 0
+fn=xmlRMutexUnlock
+0 85 2 0 30 0 0 15 0 0
+fn=xmlReadMemory
+0 29 2 2 6 0 0 6 0 0
+fn=xmlRegisterCharEncodingHandler
+0 120 1 1 32 0 0 24 1 0
+fn=xmlRegisterDefaultInputCallbacks
+0 4 1 1 1 1 0 0 0 0
+fn=xmlRegisterDefaultOutputCallbacks
+0 4 0 0 1 0 0 0 0 0
+fn=xmlSAX2EndDocument
+0 42 4 3 14 2 0 2 0 0
+fn=xmlSAX2EndElementNs
+0 2072 2 2 666 0 0 370 0 0
+fn=xmlSAX2ExternalSubset
+0 29 3 3 9 0 0 6 0 0
+fn=xmlSAX2IgnorableWhitespace
+0 91 1 1 91 0 0 0 0 0
+fn=xmlSAX2InternalSubset
+0 35 3 3 10 0 0 8 0 0
+fn=xmlSAX2SetDocumentLocator
+0 1 1 1 1 0 0 0 0 0
+fn=xmlSAX2StartDocument
+0 55 5 5 16 0 0 13 0 0
+fn=xmlSAX2StartElementNs
+0 10932 22 17 3124 1 0 1521 0 0
+fn=xmlSAXVersion
+0 63 7 7 1 0 0 31 3 0
+fn=xmlSetGenericErrorFunc
+0 15 1 1 3 0 0 6 1 1
+fn=xmlSkipBlankChars
+0 28398 4 4 9569 7 0 4927 0 0
+fn=xmlStrEqual
+0 105 2 2 29 2 2 0 0 0
+fn=xmlStrcasecmp
+0 180 2 2 63 3 2 0 0 0
+fn=xmlStrdup
+0 139 2 1 36 0 0 0 0 0
+fn=xmlStrndup
+0 5018 7 2 1351 0 0 1158 0 0
+fn=xmlSwitchEncoding
+0 27 3 3 8 1 1 4 0 0
+fn=xmlUnlinkNode
+0 46 6 6 14 3 0 8 1 0
+fn=xmlXPathInit
+0 10 1 1 7 3 1 3 1 1
+summary: 55379616 96105 14328 15130110 516830 41508 6851119 62741 38247
